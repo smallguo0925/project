@@ -1,0 +1,442 @@
+@font-face {
+    font-family: FakePearl-Regular;
+    src: url(https://cdn.jsdelivr.net/gh/max32002/FakePearl@1.1/webfont/FakePearl-Regular.woff2) format("woff2")
+    , url(https://cdn.jsdelivr.net/gh/max32002/FakePearl@1.1/webfont/FakePearl-Regular.woff) format("woff");
+  }
+.body{
+        font-family: FakePearl-Regular;
+
+}
+/* 導覽列 */
+header nav{
+    display: flex;
+    background-color: #9D2933;
+    max-width: 1920px;
+    width: 100%;
+    font-family: FakePearl-Regular;
+    font-size: 24px;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 10;
+
+}
+.nav-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.nav-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.nav-center{
+    width: 288px;
+}
+header nav a{
+    text-decoration: none;
+    padding: 0 68px;
+    font-size: 24px;
+    color: #fff;
+    letter-spacing: 2px; 
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+header nav a:hover:not(#nav-logo){
+    background-color: #C3272B;
+
+}
+#nav-logo{
+    position: absolute;
+    height: 153px;
+    /* margin: auto; */
+    margin-top: 10px;
+
+}
+#nav-logo img{
+    width: 100%;
+    vertical-align: top;
+    
+}
+
+/* BANNER */
+
+.banner img{
+    max-width: 1920px;
+    width: 100%;
+    vertical-align: top;
+}
+
+/* 熱銷商品 */
+
+.hot-title h2{
+    text-align: center;
+    font-family: FakePearl-Regular;
+    font-size: 36px;
+    margin: 68px 0;
+    letter-spacing: 2px;
+    font-weight: normal;
+
+}
+
+.hot-body{
+    background-color: #FFFBF0;
+    background-image: url(hot-line.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1920px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: FakePearl-Regular;
+
+}
+.hot-product{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+.hot-product img{
+    width: 100%;
+
+}
+.hot-productitem{
+    display: flex;
+    flex-direction: column;
+
+}
+.hot-producttext{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;  
+    font-size: 24px;
+    letter-spacing: 2px; 
+    line-height: 270%;
+    
+}
+.hot-footer{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.hot-footer a{
+    text-decoration: none;
+    color: #fff;
+    text-align: center; 
+    line-height: 75px; 
+    width: 255px;
+    height: 70px;
+    color: #fff;
+    background-color: #DBC5AE;
+    border-radius: 50px;
+    letter-spacing: 3px;
+    font-family: FakePearl-Regular;
+    font-size: 20px;
+    margin: 68px ;
+
+}
+.hot-footer a:hover{
+    background-color: #E6CAA2;
+}
+
+/* 手作課程 */
+
+.diy{
+    background:url(diy-bgcright.png) no-repeat right top,url(diy-bgcleft.png) no-repeat left bottom , rgba(255,242,223,1) url(html-BGC.png) repeat left top / cover;
+    max-width: 1920px;
+    width: 100%;
+}
+.diy-title h2{
+    font-size: 36px;
+    font-family: FakePearl-Regular;
+    text-align: center;
+    font-weight: normal;
+    padding: 68px 0 34px 0;
+    letter-spacing: 2px; 
+
+}
+.diy-body{
+    font-family: FakePearl-Regular;
+    font-size: 32px;
+}
+
+.diy-body-top{
+    display: flex;
+    align-items: center;
+    padding: 34px 68px 0 68px;
+    margin-bottom: -68px;
+    
+}
+.diy-bodytop-img img{
+    width: 100%;
+    vertical-align: top;
+}
+.diy-bodytop-text{
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 2px; 
+
+}
+.diy-bodytop-text p{
+    margin: 34px;
+}
+
+
+.diy-body-bottom{
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 150px;
+    /* align-items: center;
+    justify-content: end; */
+    padding: 0 68px 34px 68px;
+    
+}
+.diy-bodybottom-text{
+    align-self: center;
+    justify-self: end;
+    letter-spacing: 2px; 
+
+}
+.diy-bodybottom-text p{
+    margin: 68px 0;
+}
+
+.diy-footer{
+    display: flex;
+    justify-content: center;
+
+}
+.diy-footer a{
+    text-decoration: none;
+    color: #fff;
+    text-align: center; 
+    line-height: 75px; 
+    width: 255px;
+    height: 70px;
+    color: #fff;
+    background-color: #DBC5AE;
+    border-radius: 50px;
+    letter-spacing: 3px;
+    font-family: FakePearl-Regular;
+    font-size: 20px;
+    margin-bottom: 68px ;
+
+}
+.diy-footer a:hover{
+    background-color: #E6CAA2;
+}
+
+/* 製作過程 */
+
+.sop-body{
+    max-width: 1920px;
+    width: 100%;
+    background: #FFFBF0 url(sop-bgc-line.png) repeat left top / cover;
+    position: relative;
+
+}
+.sop-title {
+    font-family: FakePearl-Regular;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 100;
+    padding: 68px;
+    letter-spacing: 2px;
+}
+.sop-title p{
+    font-size: 32px;
+    margin-top: 34px;
+}
+.sop-content{
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+    font-family: FakePearl-Regular;
+    letter-spacing: 2px;
+    line-height: 340%;
+
+}
+.sop-step1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.sop-step2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -14px;
+}
+.sop-step3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -22px;
+}
+.sop-step4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -52px;
+}
+.sop-step-img img{
+    width: 100%;
+    vertical-align: top;
+}
+.sop-step-text{
+    text-align: left;
+}
+.flour{
+    position: absolute;
+    top: 270px;
+    left: 370px;
+    width: 170px;
+    height: 170px;
+    background: url(sop-flour.png) no-repeat ;
+    
+}
+.rolling-pin{
+    position: absolute;
+    top: 32%;
+    right: 18%;
+    width: 360px;
+    height: 165px;
+    background: url(sop-rolling\ pin.png) no-repeat;
+
+}
+.yolk{
+    position: absolute;
+    bottom: 38%;
+    left: 19%;
+    width: 280px;
+    height: 280px;
+    background: url(sop-yolkcake.png) no-repeat;
+}
+.oven{
+    position: absolute;
+    bottom: 16%;
+    right: 18%;
+    width: 300px;
+    height: 210px;
+    background: url(sop-oven.png) no-repeat;
+
+}
+/* 頁底 */
+#footer-body{
+    background-color: #9D2933;
+    color: white;
+    font-family: FakePearl-Regular;
+    /* max-width: 1920px; */
+    width: 100%;
+    letter-spacing: 2px
+
+}
+.footer-content{
+    display: flex;
+    font-size: 16px;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    padding-top: 20px;
+    
+}
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.footer-address{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.footer-address-icon img{
+    width: 100%;
+    vertical-align: top;
+
+}
+.footer-tel{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.footer-tel-icon img{
+    width: 100%;
+    vertical-align: top;
+}
+.footer-email{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.footer-email-icon img{
+    width: 100%;
+    vertical-align: top;
+}
+
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.footer-icons{
+    display: flex;
+    justify-content: start;
+    gap: 34px;
+}
+.footer-icons a{
+    width: 100%;
+    height: 100%;
+}
+.footer-time{
+    padding-top: 9px;
+}
+.footer-logo img{
+    width: 100%;
+    vertical-align: top;
+}
+
+.footer h3{
+    text-align: center;
+    text-wrap: none;
+    font-size: 12px;
+    line-height: 27px;
+    margin-top: 10px;
+}
+
+
+/* 回到頁頂 */
+
+.pagetop{
+    width: 50px;
+    height: 50px;
+    right: 2%;
+    bottom: 2%;
+    position: fixed;
+}
+.shoppingcart-icon{
+    width: 50px;
+    height: 50px;
+    right: 2%;
+    bottom: 10%;
+    position: fixed;
+
+}
+
+
+
+

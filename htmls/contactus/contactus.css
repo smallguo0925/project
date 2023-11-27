@@ -1,0 +1,305 @@
+@font-face {
+    font-family: FakePearl-Regular;
+    src: url(https://cdn.jsdelivr.net/gh/max32002/FakePearl@1.1/webfont/FakePearl-Regular.woff2) format("woff2")
+    , url(https://cdn.jsdelivr.net/gh/max32002/FakePearl@1.1/webfont/FakePearl-Regular.woff) format("woff");
+}
+/* 身體 */
+.wrap{
+    font-family: FakePearl-Regular;
+    letter-spacing: 2px;
+    line-height: 270%;
+    font-weight: 400;
+    position: relative;
+    background-color: #fffbf0 ;
+    font-size: 20px;
+}
+/* 導覽列 */
+.header{
+    width: 100%;
+    padding-bottom: 10%;
+}
+header nav{
+    display: flex;
+    background-color: #9D2933;
+    /* max-width: 1920px; */
+    width: 100%;
+    font-family: FakePearl-Regular;
+    font-size: 24px;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 10;
+
+}
+.nav-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.nav-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.nav-center{
+    width: 288px;
+}
+header nav a{
+    text-decoration: none;
+    padding: 0 68px;
+    font-size: 24px;
+    color: #fff;
+    letter-spacing: 2px; 
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+header nav a:hover:not(#nav-logo){
+    background-color: #C3272B;
+
+}
+#nav-logo{
+    position: absolute;
+    height: 153px;
+    /* margin: auto; */
+    margin-top: 10px;
+
+}
+#nav-logo img{
+    width: 100%;
+    vertical-align: top;
+    
+}
+/* 聯絡資訊+繩結+麵包屑 */
+.contactus-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactus-title-h2{
+    font-size: 36px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 34px;
+}
+
+.contactus-title-rope img{
+    width: 100%;
+    vertical-align: top;
+}
+.contactus-title-bread a{
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 34px;
+    font-size: 16px;
+}
+.contactus-title-bread a:hover{
+    color: #DBC5AE;
+    font-size: 16px;
+}
+/*  聯絡我們資訊  */
+.cotactus-info{
+    max-width: 1200px;
+    width: 100%;
+}
+#sign img{
+    width: 100%;
+    vertical-align: top;
+}
+#infotext{
+    background-color: #F2ECDE;
+    border-radius: 0 20px 20px 0px;
+    display: flex;
+    justify-content: center;
+}
+.contactus-info-border{
+    border: 1px solid #E3D8C6;
+    padding: 34px;
+    border-radius: 20px;
+}
+
+.contactus-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+.contactus-text-footer{
+    display: flex;
+    align-items: end;
+}
+.contactus-icons{
+    display: flex;
+    justify-content: start;
+    gap: 34px;
+}
+.contactus-btn a{
+    display: flex;
+    background-color: #DBC5AE;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px ;
+    border-radius: 50px;
+    margin-left: 34px;
+}
+.contactus-btn a:hover{
+    background-color: #E6CAA2;
+
+}
+/* 地圖定位+繩結 */
+.contactus-maptitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactus-maptitle-h2{
+    font-size: 36px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 34px;
+}
+.contactus-maptitle-rope img{
+    width: 100%;
+    vertical-align: top;
+}
+/* 地圖 */
+.contactus-map{
+    display: flex;
+    justify-content: center;
+    margin: 34px;
+}
+.contactus-map-border{
+    border: 1px solid #E3D8C6;
+    padding: 34px;
+    border-radius: 20px;
+}
+.contactus-mapbox{
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%;
+    background-color: #fffbf0;
+    position: relative;
+}
+.contactus-mapbox iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 20px;
+}
+
+/* 背景圓圈線 */
+.contactus-circleline{
+    position: absolute;
+    right: 6%;
+    top: 26%;
+}
+.contactus-circleline img{
+    width: 100%;
+    vertical-align: top;
+}
+
+/* 頁底 */
+#footer-body{
+    background-color: #9D2933;
+    color: white;
+    font-family: FakePearl-Regular;
+    /* max-width: 1920px; */
+    width: 100%;
+    letter-spacing: 2px
+
+}
+.footer-content{
+    display: flex;
+    font-size: 16px;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    padding-top: 20px;
+    
+}
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.footer-address{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.footer-address-icon img{
+    width: 100%;
+    vertical-align: top;
+
+}
+.footer-tel{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.footer-tel-icon img{
+    width: 100%;
+    vertical-align: top;
+}
+.footer-email{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.footer-email-icon img{
+    width: 100%;
+    vertical-align: top;
+}
+
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.footer-icons{
+    display: flex;
+    justify-content: start;
+    gap: 34px;
+}
+.footer-icons a{
+    width: 100%;
+    height: 100%;
+}
+.footer-time{
+    padding-top: 9px;
+}
+.footer-logo img{
+    width: 100%;
+    vertical-align: top;
+}
+
+.footer h3{
+    text-align: center;
+    text-wrap: none;
+    font-size: 12px;
+    line-height: 27px;
+    margin-top: 10px;
+}
+
+/* 回到頁頂 */
+
+.pagetop{
+    width: 50px;
+    height: 50px;
+    right: 2%;
+    bottom: 2%;
+    position: fixed;
+}
+.shoppingcart-icon{
+    width: 50px;
+    height: 50px;
+    right: 2%;
+    bottom: 10%;
+    position: fixed;
+
+}
