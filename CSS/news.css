@@ -149,7 +149,7 @@ header nav a:hover:not(#nav-logo){
     max-width: 1200px;
 }
 .news-content-top{
-    background: rgba(255,242,223,1) url(../html-BGC.png) repeat left top / cover;
+    background: rgba(255,242,223,1) url(../Images/html-BGC.png) repeat left top / cover;
 
 }
 .news-content-bottom{

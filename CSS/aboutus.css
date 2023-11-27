@@ -87,7 +87,7 @@ header nav a:hover:not(#nav-logo){
     margin: 34px;
 }
 .about-title-rope{
-    background: url(rope.png) no-repeat center / cover;
+    background: url(../Images/rope.png) no-repeat center / cover;
     width: 830px;
     height: 55px;
     margin-bottom: 34px;
@@ -148,7 +148,7 @@ header nav a:hover:not(#nav-logo){
 /* 左上 */
 /* 用MARGIN調間距 */
 #aboutus-lefttop{
-    background: url(aboutus-left-top.png) no-repeat  ;
+    background: url(../Images/aboutus-left-top.png) no-repeat  ;
     width: 560px;
     height: 560px;
     margin-right: 34px;
@@ -157,7 +157,7 @@ header nav a:hover:not(#nav-logo){
 
 /* 左下 */
 #aboutus-leftbottom{
-    background: url(aboutus-left-bottom.png) no-repeat ;
+    background: url(../Images/aboutus-left-bottom.png) no-repeat ;
     width: 610px;
     height: 610px;
     
@@ -166,7 +166,7 @@ header nav a:hover:not(#nav-logo){
 
 /* 右上 */
 #aboutus-righttop{
-    background: url(aboutus-right-top.png) no-repeat ;
+    background: url(../Images/aboutus-right-top.png) no-repeat ;
     width: 560px;
     height: 560px;
     margin-left: 34px;
@@ -176,7 +176,7 @@ header nav a:hover:not(#nav-logo){
 
 /* 右下 */
 #aboutus-rightbottom{
-    background: url(aboutus-right-bottom.png) no-repeat ;
+    background: url(../Images/aboutus-right-bottom.png) no-repeat ;
     width: 600px;
     height: 600px;
     margin-left: 34px;
