@@ -82,7 +82,7 @@ header nav a:hover:not(#nav-logo){
 
 .hot-body{
     background-color: #FFFBF0;
-    background-image: url(hot-line.png);
+    background-image: url(Images/hot-line.png);
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 1920px;
@@ -149,7 +149,7 @@ header nav a:hover:not(#nav-logo){
 /* 手作課程 */
 
 .diy{
-    background:url(diy-bgcright.png) no-repeat right top,url(diy-bgcleft.png) no-repeat left bottom , rgba(255,242,223,1) url(html-BGC.png) repeat left top / cover;
+    background:url(Images/diy-bgcright.png) no-repeat right top,url(Images/diy-bgcleft.png) no-repeat left bottom , rgba(255,242,223,1) url(Images/html-BGC.png) repeat left top / cover;
     max-width: 1920px;
     width: 100%;
 }
@@ -239,7 +239,7 @@ header nav a:hover:not(#nav-logo){
 .sop-body{
     max-width: 1920px;
     width: 100%;
-    background: #FFFBF0 url(sop-bgc-line.png) repeat left top / cover;
+    background: #FFFBF0 url(Images/sop-bgc-line.png) repeat left top / cover;
     position: relative;
 
 }
@@ -301,7 +301,7 @@ header nav a:hover:not(#nav-logo){
     left: 370px;
     width: 170px;
     height: 170px;
-    background: url(sop-flour.png) no-repeat ;
+    background: url(Images/sop-flour.png) no-repeat ;
     
 }
 .rolling-pin{
@@ -310,7 +310,7 @@ header nav a:hover:not(#nav-logo){
     right: 18%;
     width: 360px;
     height: 165px;
-    background: url(sop-rolling\ pin.png) no-repeat;
+    background: url(Images/sop-rolling\ pin.png) no-repeat;
 
 }
 .yolk{
@@ -319,7 +319,7 @@ header nav a:hover:not(#nav-logo){
     left: 19%;
     width: 280px;
     height: 280px;
-    background: url(sop-yolkcake.png) no-repeat;
+    background: url(Images/sop-yolkcake.png) no-repeat;
 }
 .oven{
     position: absolute;
@@ -327,7 +327,7 @@ header nav a:hover:not(#nav-logo){
     right: 18%;
     width: 300px;
     height: 210px;
-    background: url(sop-oven.png) no-repeat;
+    background: url(Images/sop-oven.png) no-repeat;
 
 }
 /* 頁底 */
