@@ -159,22 +159,22 @@ header nav a:hover:not(#nav-logo){
         scale: 1.05;
     }
 }
-
-.product-footer{
-    width: 100%;
+.product-text{
+    text-align: center;
+    padding-left: 15%;
+    font-size: 24px;
+}
+.product-intro-bottom{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
     gap: 34px;
-    padding:0 34px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30%;
 }
 .product-footer img{
     vertical-align: top;
 }
-
-
-
-
 /* 換頁 */
 .product-list-changepages{
     background-color: #F2ECDE;

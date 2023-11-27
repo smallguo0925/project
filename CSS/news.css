@@ -146,11 +146,11 @@ header nav a:hover:not(#nav-logo){
 
 /* 新聞區 */
 .news-content{
-    max-width: 1200px;
-}
-.news-content-top{
+    /* max-width: 1200px; */
     background: rgba(255,242,223,1) url(../Images/html-BGC.png) repeat left top / cover;
-
+}
+.col{
+    display: flex;
 }
 .news-content-bottom{
     background-color: #fffbf0;
@@ -160,7 +160,8 @@ header nav a:hover:not(#nav-logo){
     border-radius: 30px;
     box-shadow: 1px 0px 10px #ccc; 
     position: relative;
-    /* height: 100%; */
+    background-color: #F2ECDE;
+
 }
 .news-card img{
     width: 100%;
@@ -178,7 +179,6 @@ header nav a:hover:not(#nav-logo){
     box-shadow: 1px 1px 2px #DBC5AE;
 }
 .news-text{
-    background-color: #F2ECDE;
     padding: 34px;
     border-radius: 0 0 30px 30px;
     height: 100%;
@@ -188,6 +188,8 @@ header nav a:hover:not(#nav-logo){
     font-size: 20px;
     font-weight: 400;
 }
+
+
 
 /* 換頁 */
 
