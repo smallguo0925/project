@@ -1,0 +1,225 @@
+@font-face {
+    font-family: FakePearl-Regular;
+    src: url(https://cdn.jsdelivr.net/gh/max32002/FakePearl@1.1/webfont/FakePearl-Regular.woff2) format("woff2")
+    , url(https://cdn.jsdelivr.net/gh/max32002/FakePearl@1.1/webfont/FakePearl-Regular.woff) format("woff");
+}
+/* 身體 */
+.wrap{
+    background-color: #fffbf0;
+    font-family: FakePearl-Regular;
+    letter-spacing: 2px;
+    line-height: 270%;
+    font-size: 20px;
+}
+/* 導覽列 */
+.header{
+    width: 100%;
+    padding-bottom: 10%;
+}
+header nav{
+    display: flex;
+    background-color: #9D2933;
+    /* max-width: 1920px; */
+    width: 100%;
+    font-family: FakePearl-Regular;
+    font-size: 24px;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 10;
+
+}
+.nav-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.nav-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.nav-center{
+    width: 288px;
+}
+header nav a{
+    text-decoration: none;
+    padding: 0 68px;
+    font-size: 24px;
+    color: #fff;
+    letter-spacing: 2px; 
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+header nav a:hover:not(#nav-logo){
+    background-color: #C3272B;
+
+}
+#nav-logo{
+    position: absolute;
+    height: 153px;
+    /* margin: auto; */
+    margin-top: 10px;
+
+}
+#nav-logo img{
+    width: 100%;
+    vertical-align: top;
+}
+/* 產品頁面+繩結+麵包屑 */
+.product-pages-title{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.product-pages-title-h2{
+    font-size: 36px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 34px;
+}
+
+.product-pages-title-rope img{
+    width: 100%;
+    vertical-align: top;
+}
+.product-pages-title-bread a{
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 34px;
+    font-size: 16px;
+}
+.product-pages-title-bread a:hover{
+    color: #DBC5AE;
+    font-size: 16px;
+}
+/* 產品內容 */
+.producttext{
+    /* display: flex;
+    flex-wrap: wrap; */
+    background-color: #E3D8C6;
+    border-radius: 0px 20px 20px 0px;
+    padding: 10px 34px;
+    line-height: 2;
+}
+.productimg img{
+    width: 100%;
+    vertical-align: top;
+}
+.producttext-line{
+    border-bottom:1px solid #000;
+
+}
+.producttext-title{
+    font-size: 36px;
+    padding-bottom: 34px;
+}
+.producttext-content{
+
+}
+/* 頁底 */
+#footer-body{
+    background-color: #9D2933;
+    color: white;
+    font-family: FakePearl-Regular;
+    /* max-width: 1920px; */
+    width: 100%;
+    letter-spacing: 2px
+
+}
+.footer-content{
+    display: flex;
+    font-size: 16px;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    padding-top: 20px;
+    
+}
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.footer-address{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.footer-address-icon img{
+    width: 100%;
+    vertical-align: top;
+
+}
+.footer-tel{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.footer-tel-icon img{
+    width: 100%;
+    vertical-align: top;
+}
+.footer-email{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.footer-email-icon img{
+    width: 100%;
+    vertical-align: top;
+}
+
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.footer-icons{
+    display: flex;
+    justify-content: start;
+    gap: 34px;
+}
+.footer-icons a{
+    width: 100%;
+    height: 100%;
+}
+.footer-time{
+    padding-top: 9px;
+}
+.footer-logo img{
+    width: 100%;
+    vertical-align: top;
+}
+
+.footer h3{
+    text-align: center;
+    text-wrap: none;
+    font-size: 12px;
+    line-height: 27px;
+    margin-top: 10px;
+}
+
+/* 回到頁頂 */
+
+.pagetop{
+    width: 50px;
+    height: 50px;
+    right: 2%;
+    bottom: 2%;
+    position: fixed;
+}
+.shoppingcart-icon{
+    width: 50px;
+    height: 50px;
+    right: 2%;
+    bottom: 10%;
+    position: fixed;
+}
