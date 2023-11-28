@@ -269,7 +269,11 @@ header nav a:hover:not(#nav-logo){
 }
 .col{
     margin-bottom: 34px;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+
 /* 頁底 */
 #footer-body{
     background-color: #9D2933;
