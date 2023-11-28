@@ -3,11 +3,12 @@
     src: url(https://cdn.jsdelivr.net/gh/max32002/FakePearl@1.1/webfont/FakePearl-Regular.woff2) format("woff2")
     , url(https://cdn.jsdelivr.net/gh/max32002/FakePearl@1.1/webfont/FakePearl-Regular.woff) format("woff");
 }
+
 /* 身體 */
-html{
+
+.wrap{
     background-color: #fffbf0;
-    font-family: FakePearl-Regular;
-    letter-spacing: 2px;
+    font-family: FakePearl-Regular;    letter-spacing: 2px;
     line-height: 270%;
     font-size: 20px;
 }
@@ -67,38 +68,42 @@ header nav a:hover:not(#nav-logo){
     vertical-align: top;
 }
 /* 產品頁面+繩結+麵包屑 */
-.order-title{
+.order-finish-title{
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
 }
-.order-title-h2{
+.order-finish-title-h2{
     font-size: 36px;
     letter-spacing: 2px;
     text-align: center;
     margin: 34px;
 }
 
-.order-title-rope img{
+.order-finish-title-rope img{
     width: 100%;
     vertical-align: top;
 }
-.order-title-bread a{
+.order-finish-title-bread a{
     display: inline-block;
     color: #000;
     text-decoration: none;
     margin-bottom: 34px;
     font-size: 16px;
 }
-.order-title-bread a:hover{
+.order-finish-title-bread a:hover{
     color: #DBC5AE;
     font-size: 16px;
 }
-
 /* 訂購步驟小圖 */
+
+.order-stepsmallimg{
+    max-width: 800px;
+}
+
 .step1 p:first-child{
-    background: url(../Images/other-step-ing.png) no-repeat center;
+    background: url(../Images/order-otherstep.png) no-repeat center;
     width: 2.5rem;
     height: 2.5rem;
     text-align: center;
@@ -122,7 +127,7 @@ header nav a:hover:not(#nav-logo){
 
 }
 .step4 p:first-child{
-    background: url(../Images/order-otherstep.png) no-repeat center;
+    background: url(../Images/other-step-ing.png) no-repeat center;
     width: 2.5rem;
     height: 2.5rem;
     text-align: center;
@@ -130,9 +135,7 @@ header nav a:hover:not(#nav-logo){
 
 }
 
-.order-stepsmallimg{
-    max-width: 800px;
-}
+
 .step1{
     display: flex;
     flex-direction: column;
@@ -160,103 +163,14 @@ header nav a:hover:not(#nav-logo){
     align-items: center;
 
 }
-/* 訂購內容 */
-.order-content{
-    margin-top: 3.4rem;
-}
-.content-body{
-    text-align: center;
-    padding: 34px;
-    border-bottom: 1px solid #000;
-}
-.content-body:nth-child(4){
-    border-bottom:none ;
-    padding: 3.4rem;
 
-}
-.order-content-body{
-    background-color: #F2ECDE;
-}
-.number {
-    display: flex;
-    align-content: stretch;
-    align-items: center;
-    justify-content: center;
-}
-.number span{
-    cursor: pointer;
-}
-.minus{
-    width: 1em;
-    height: 2.5rem;
-    text-align: center;
-    background-color: #fffbf0;
-    border-radius: 10px 0 0 10px;
-    font-size: 26px;
-    padding: 0 5px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.plus{
-    width: 1em;
-    height: 2.5rem;
-    vertical-align: middle;
-    text-align: center;
-    background-color: #fffbf0;
-    border-radius: 0 10px 10px 0;
-    font-size: 26px;
-    padding: 0 5px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.minus:hover, .plus:hover{
-    background-color: #DBC5AE;
-}
-#numberbox{
-    height: 46px;
-    width: 100px;
-    text-align: center;
-    font-size: 26px;
-    border:1px solid #fffbf0;
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
-    background-color: #fffbf0;
-}
-.content-amount{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 34px;
-}
-.total{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-/* 按扭區 */
-[class*=btn-]{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px 34px;
-    margin: 34px 0;
-}
-[class*=btn-] > a{
-padding: 1rem 3rem;
-margin: 3rem 0 1rem 0;
-text-decoration: none;
-background-color: #DBC5AE;
-color: aliceblue;
-border-radius: 30px;
-}
-[class*=btn-] > a:hover{
-    background-color: #E6CAA2;
-}
-    
+
+
+
+
+
+
 
 
 
