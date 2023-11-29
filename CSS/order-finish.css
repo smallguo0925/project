@@ -103,35 +103,35 @@ header nav a:hover:not(#nav-logo){
 }
 
 .step1 p:first-child{
-    background: url(../Images/order-otherstep.png) no-repeat center;
-    width: 2.5rem;
-    height: 2.5rem;
+    background: url(../Images/order-otherstep.png) no-repeat left top;
+    width: 3rem;
+    height: 3rem;
     text-align: center;
     vertical-align: middle;
-    padding-top: 1.4rem;
+    
 }
 .step2 p:first-child{
-    background: url(../Images/order-otherstep.png) no-repeat center;
-    width: 2.5rem;
-    height: 2.5rem;
+    background: url(../Images/order-otherstep.png) no-repeat left top;
+    width: 3rem;
+    height: 3rem;
     text-align: center;
-    padding-top: 1.4rem;
+    
 
 }
 .step3 p:first-child{
-    background: url(../Images/order-otherstep.png) no-repeat center;
-    width: 2.5rem;
-    height: 2.5rem;
+    background: url(../Images/order-otherstep.png) no-repeat left top;
+    width: 3rem;
+    height: 3rem;
     text-align: center;
-    padding-top: 1.4rem;
+    
 
 }
 .step4 p:first-child{
-    background: url(../Images/other-step-ing.png) no-repeat center;
-    width: 2.5rem;
-    height: 2.5rem;
+    background: url(../Images/other-step-ing.png) no-repeat left top;
+    width: 3rem;
+    height: 3rem;
     text-align: center;
-    padding-top: 1.4rem;
+    
 
 }
 
@@ -164,10 +164,42 @@ header nav a:hover:not(#nav-logo){
 
 }
 
+/* 訂購完成資訊  */
+.orderfinish-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 68px;
+}
+.col{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.finish-info{
+    max-width: 800px;
+}
 
-
-
-
+/* 更多商品按紐 */
+.morebtn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.morebtn a{
+    color: #fff;
+    text-decoration: none;
+    background-color: #DBC5AE;
+    border-radius: 30px;
+    padding: 0 2rem;
+    margin:auto
+}
+.morebtn a:hover{
+    background-color: #E6CAA2;
+}
 
 
 
