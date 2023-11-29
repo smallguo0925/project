@@ -129,6 +129,7 @@ header nav a:hover:not(#nav-logo){
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 34px;
+    width: 100%;
 }
 #addcart:hover{
     background-color: #E6CAA2;

@@ -103,7 +103,12 @@ header nav a:hover:not(#nav-logo){
 }
 .hot-product img{
     width: 100%;
-
+}
+.hot-productleft{
+    cursor: pointer;
+}
+.hot-productright{
+    cursor: pointer;
 }
 .hot-productitem{
     display: flex;
@@ -327,7 +332,7 @@ header nav a:hover:not(#nav-logo){
     right: 18%;
     width: 300px;
     height: 210px;
-    background: url(../Images/) no-repeat;
+    background: url(../Images/sop-oven.png) no-repeat;
 
 }
 /* 頁底 */
