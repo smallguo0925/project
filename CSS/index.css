@@ -9,74 +9,41 @@ html{
     letter-spacing: 2px;
     line-height: 270%;
     font-size: 20px;
+    max-width: 1920px;
 }
 ::selection {
 	background: #9D2933;
 	color: #fff;
 }
 /* 導覽列 */
-header nav{
-    display: flex;
-    background-color: #9D2933;
+.navbar {
     max-width: 1920px;
     width: 100%;
-    font-family: FakePearl-Regular;
-    font-size: 24px;
-    justify-content: space-evenly;
-    position: fixed;
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(7, 1fr); 
+    height: 90px; 
+    position: fixed; 
+    background-color: #9D2933;
+    text-align: center;
+    justify-content: center;
     z-index: 10;
-
 }
-.nav-left{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-.nav-right{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-.nav-center{
-    width: 288px;
-}
-header nav a{
+.navbar a {
+    color: white;
     text-decoration: none;
-    padding: 0 68px;
+    text-align: center;
+    padding: 10px;
     font-size: 24px;
-    color: #fff;
-    letter-spacing: 2px; 
-    height: 90px;
-    display: flex;
-    align-items: center;
+    letter-spacing: 2px;
+    font-family: FakePearl-Regular;
+    text-align: center;
 }
-@media (width >= 1440px) {
-    header nav a{
-        text-decoration: none;
-        padding: 0 68px;
-        font-size: 24px;
-        color: #fff;
-        letter-spacing: 2px; 
-        height: 90px;
-        display: flex;
-        align-items: center;
-    }
+.navbar a:not(.nav-logo){
+    padding: 33px 0px;
 }
-header nav a:hover:not(#nav-logo){
+.navbar a:not(.nav-logo):hover{
     background-color: #C3272B;
-
-}
-#nav-logo{
-    position: absolute;
-    height: 153px;
-    /* margin: auto; */
-    margin-top: 10px;
-
-}
-#nav-logo img{
-    width: 100%;
-    vertical-align: top;
-    
 }
 
 /* BANNER */
