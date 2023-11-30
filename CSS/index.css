@@ -2,10 +2,13 @@
     font-family: FakePearl-Regular;
     src: url(https://cdn.jsdelivr.net/gh/max32002/FakePearl@1.1/webfont/FakePearl-Regular.woff2) format("woff2")
     , url(https://cdn.jsdelivr.net/gh/max32002/FakePearl@1.1/webfont/FakePearl-Regular.woff) format("woff");
-  }
-.body{
-        font-family: FakePearl-Regular;
-
+}
+html{
+    background-color: #fffbf0;
+    font-family: FakePearl-Regular;
+    letter-spacing: 2px;
+    line-height: 270%;
+    font-size: 20px;
 }
 /* 導覽列 */
 header nav{
@@ -35,7 +38,8 @@ header nav{
 }
 header nav a{
     text-decoration: none;
-    padding: 0 68px;
+    padding: 0 34px;
+    margin: 0 34px;
     font-size: 24px;
     color: #fff;
     letter-spacing: 2px; 

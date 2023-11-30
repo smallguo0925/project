@@ -8,8 +8,10 @@
 
 .wrap{
     background-color: #fffbf0;
-    font-family: FakePearl-Regular;    letter-spacing: 2px;
+    font-family: FakePearl-Regular;   
+    letter-spacing: 2px;
     line-height: 270%;
+
     font-size: 20px;
 }
 /* 導覽列 */
