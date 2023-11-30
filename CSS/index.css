@@ -38,14 +38,25 @@ header nav{
 }
 header nav a{
     text-decoration: none;
-    padding: 0 34px;
-    margin: 0 34px;
+    padding: 0 68px;
     font-size: 24px;
     color: #fff;
     letter-spacing: 2px; 
     height: 90px;
     display: flex;
     align-items: center;
+}
+@media (width >= 1440px) {
+    header nav a{
+        text-decoration: none;
+        padding: 0 68px;
+        font-size: 24px;
+        color: #fff;
+        letter-spacing: 2px; 
+        height: 90px;
+        display: flex;
+        align-items: center;
+    }
 }
 header nav a:hover:not(#nav-logo){
     background-color: #C3272B;
@@ -344,7 +355,7 @@ header nav a:hover:not(#nav-logo){
     background-color: #9D2933;
     color: white;
     font-family: FakePearl-Regular;
-    /* max-width: 1920px; */
+    max-width: 1920px;
     width: 100%;
     letter-spacing: 2px
 

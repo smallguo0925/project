@@ -186,6 +186,7 @@ header nav a:hover:not(#nav-logo){
     vertical-align: middle;
     text-align: center;
     background-color: #fffbf0;
+    font-family: FakePearl-Regular;
 }
 .favorite-icon {
     position: relative;
