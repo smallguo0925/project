@@ -168,6 +168,8 @@ header nav a:hover:not(#nav-logo){
     text-align: center;
     padding: 34px;
     border-bottom: 1px solid #000;
+    position: relative;
+
 }
 .content-body:nth-child(4){
     border-bottom:none ;
@@ -237,7 +239,11 @@ header nav a:hover:not(#nav-logo){
     justify-content: center;
     align-items: center;
 }
+.delete{
+    position: absolute;
+    right: 5%;
 
+}
 /* 按扭區 */
 [class*=btn-]{
     display: flex;
