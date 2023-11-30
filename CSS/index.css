@@ -10,6 +10,10 @@ html{
     line-height: 270%;
     font-size: 20px;
 }
+::selection {
+	background: #9D2933;
+	color: #fff;
+}
 /* 導覽列 */
 header nav{
     display: flex;

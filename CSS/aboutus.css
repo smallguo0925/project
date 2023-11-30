@@ -10,6 +10,11 @@
     letter-spacing: 2px;
     line-height: 270%;
 }
+::selection {
+	background: #9D2933;
+	color: #fff;
+}
+
 /* 導覽列 */
 header nav{
     display: flex;
