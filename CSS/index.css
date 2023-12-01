@@ -9,7 +9,6 @@ html{
     letter-spacing: 2px;
     line-height: 270%;
     font-size: 20px;
-    max-width: 1920px;
 }
 ::selection {
 	background: #9D2933;
@@ -18,12 +17,15 @@ html{
 /* 導覽列 */
 .navbar {
     max-width: 1920px;
-    width: 100%;
+    box-sizing: border-box;
     display: grid;
     align-items: start;
     grid-template-columns: repeat(7, 1fr); 
     height: 90px; 
     position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
     background-color: #9D2933;
     text-align: center;
     justify-content: center;
@@ -33,7 +35,7 @@ html{
     color: white;
     text-decoration: none;
     text-align: center;
-    padding: 10px;
+    padding-top: 10px;
     font-size: 24px;
     letter-spacing: 2px;
     font-family: FakePearl-Regular;
