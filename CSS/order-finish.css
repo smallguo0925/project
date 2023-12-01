@@ -110,32 +110,35 @@ header nav a:hover:not(#nav-logo){
 
 .step1 p:first-child{
     background: url(../Images/order-otherstep.png) no-repeat left top;
-    width: 3rem;
-    height: 3rem;
+    width: 45px;
+    height: 45px;
     text-align: center;
     vertical-align: middle;
+    
     
 }
 .step2 p:first-child{
     background: url(../Images/order-otherstep.png) no-repeat left top;
-    width: 3rem;
-    height: 3rem;
+    width: 45px;
+    height: 45px;
     text-align: center;
+    
     
 
 }
 .step3 p:first-child{
     background: url(../Images/order-otherstep.png) no-repeat left top;
-    width: 3rem;
-    height: 3rem;
+    width: 45px;
+    height: 45px;
     text-align: center;
+    
     
 
 }
 .step4 p:first-child{
     background: url(../Images/other-step-ing.png) no-repeat left top;
-    width: 3rem;
-    height: 3rem;
+    width: 50px;
+    height: 50px;
     text-align: center;
     
 
