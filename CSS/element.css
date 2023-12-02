@@ -31,6 +31,7 @@ header ul{
     text-decoration: none;
     width: 180px;
     height:  90px;
+    transition: all .2s linear;
 }
 #nav-logo{
     position: relative;
@@ -44,4 +45,92 @@ header ul{
 }
 .nav-li a:hover:not(#nav-logo){
     background-color: #C3272B;
+}
+
+/* 繩結分隔線+麵包屑 */
+
+.divider-container > [class*=divider-]{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+[class*=divider-] a{
+    text-decoration: none;
+    color: black;
+}
+[class*=divider-] a:hover{
+    color: #DBC5AE;
+}
+.divider-rope {
+    
+}
+.divider-rope img{
+    max-width: 820px;
+    width: 100%;
+    vertical-align: top;
+}
+/* footer */
+#footer{
+    width: 100%;
+    background-color: #9D2933;
+    position: relative;
+}
+.footer-row{
+    justify-content: space-evenly;
+    align-items: center;
+}
+#footer .col{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.col >[class*=footer-]{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #fff;
+    padding: 10px 0;
+}
+.footer-logo a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    left: 35%;
+}
+.footer-logo img{
+    width: 100%;
+    vertical-align: top;
+    position: absolute;
+}
+.footer-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#footer h3{
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+/* 回到頁頂 */
+.pagetop{
+    width: 50px;
+    height: 50px;
+    right: 2%;
+    bottom: 2%;
+    position: fixed;
+}
+/* 購物車 */
+.shoppingcart-icon{
+    width: 50px;
+    height: 50px;
+    right: 2%;
+    bottom: 10%;
+    position: fixed;
 }
