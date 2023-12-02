@@ -8,6 +8,7 @@ html{
     font-size: 20px;
     letter-spacing: 2px;
     line-height: 270%;
+    background-color: #FFFBF0;
 }
 ::selection {
 	background: #9D2933;
