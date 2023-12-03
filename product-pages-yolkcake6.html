@@ -1,55 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>樂食。|　相思團圓蛋黃酥6入</title>
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/product-pages.css">
-    <link rel="stylesheet" href="CSS/product-pages-grid.css">
+    <link rel="stylesheet" href="CSS/grid.css">
+    <link rel="stylesheet" href="CSS/element.css">
     <link rel="icon" href="Images/icon-logo.png" type="Images/icon-logo.png">
 
 </head>
+
 <body>
     <!-- 整個身體 -->
     <div class="wrap">
         <!-- 導覽列 -->
-        <div class="header">
+        <section id="header">
             <header>
-                <nav>
-                    <div class="nav-left">
-                        <a href="aboutus.html">關於樂食</a>
-                        <a href="news.html">最新消息</a>
-                        <a href="product-list.html">產品介紹</a>
-                    </div>
-                    <div class="nav-center">
-                        <a href="index.html" id="nav-logo">
-                            <img src="Images/nav-logo.png" alt="樂食LOGO">
+                <ul>
+                    <li class="nav-li">
+                        <a href="aboutus.html">
+                            關於樂食
                         </a>
-                    </div>
-                    <div class="nav-right">
-                        <a href="contactus.html">店鋪資訊</a>
-                        <a href="#">會員登入</a>
-                        <a href="order.html">訂購資訊</a>
-                    </div>
-                </nav>
+                    </li>
+                    <li class="nav-li">
+                        <a href="news.html">
+                            最新消息
+                        </a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="product-list.html">
+                            產品介紹
+                        </a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="index.html" id="nav-logo">
+                            <img src="Images/nav-logo.png" alt="導覽列LOGO">
+                        </a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="contactus.html">
+                            聯絡資訊
+                        </a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="#">
+                            會員登入
+                        </a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="order.html">
+                            訂購專區
+                        </a>
+                    </li>
+                </ul>
             </header>
-        </div>
-        <!-- 產品頁面+繩結+麵包屑 -->
-        <div class="product-pages-title">
-            <div class="product-pages-title-h2">
-                <h2>產品列表</h2>
+        </section>
+
+        <!-- 繩結分隔線+麵包屑 -->
+        <section id="divider">
+            <div class="divider-container">
+                <div class="divider-h2 row row-cols-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-4">
+                    <h2>頁面標題</h2>
+                </div>
+                <div class="divider-rope row row-cols-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-4">
+                    <!-- 背景照繩結 -->
+                    <img src="Images/rope.png" alt="繩結分隔線">
+                </div>
+                <div class="divider-bread row row-cols-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-4">
+                    <a href="Images/index/index.html">首頁</a> /
+                    <a href="#">頁面標題</a>
+                </div>
             </div>
-            <div class="product-pages-title-rope">
-                <!-- 背景照繩結 -->
-                <img src="Images/rope.png" alt="繩結分隔線">
-            </div>
-            <div class="product-pages-title-bread">
-                <a href="index.html">首頁</a> / 
-                <a href="product-list.html">產品列表</a> / 
-                <a href="#">相思團圓蛋黃酥6入</a>
-            </div>
-        </div>
+        </section>
 
         <!-- 產品內容 -->
         <div class="product-pages-content">
@@ -66,12 +91,13 @@
                             <h2>相思團圓蛋黃酥6入</h2>
                         </div>
                         <div class="producttext-content">
-                            <p>外皮採用精選的低筋麵粉，手工製作而成，質地酥脆。而內餡則以高品質的蛋黃佐以特製的相思醬，形成豐富的層次口感。這款糕點不僅在視覺上呈現如圓月般的美麗，更帶給人濃濃的思念和團圓的愉悅感。</p>
+                            <p>外皮採用精選的低筋麵粉，手工製作而成，質地酥脆。而內餡則以高品質的蛋黃佐以特製的相思醬，形成豐富的層次口感。這款糕點不僅在視覺上呈現如圓月般的美麗，更帶給人濃濃的思念和團圓的愉悅感。
+                            </p>
                             <p class="producttext-price">
                                 NT$300
                             </p>
                         </div>
-        
+
                         <div class="producttext-footer">
                             <!-- +-按鈕 -->
                             <div class="number">
@@ -87,7 +113,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
 
         <!-- 小圖 -->
@@ -105,16 +131,22 @@
             </div>
         </div>
         <!-- 其他推薦商品+繩結 -->
-        <div class="product-pages-title">
-            <div class="product-pages-title-h2">
-                <h2>其他推薦產品</h2>
+    <!-- 繩結分隔線+麵包屑 -->
+    <section id="divider">
+        <div class="divider-container">
+            <div class="divider-h2 row row-cols-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-4">
+                <h2>頁面標題</h2>
             </div>
-            <div class="product-pages-title-rope">
+            <div class="divider-rope row row-cols-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-4">
                 <!-- 背景照繩結 -->
                 <img src="Images/rope.png" alt="繩結分隔線">
             </div>
+            <div class="divider-bread row row-cols-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-4">
+                <a href="Images/index/index.html">首頁</a> /
+                <a href="#">頁面標題</a>
+            </div>
         </div>
-        <!-- 其他推薦商品內容 -->
+    </section>        <!-- 其他推薦商品內容 -->
         <div class="others">
             <div class="others-body container">
                 <div class="product-list row row-cols-1  row-cols-md-2 row-cols-lg-3  row-cols-xl-3">
@@ -126,59 +158,59 @@
                             <div class="product-img">
                                 <img src="Images/green.png" id="green" alt="翡翠金絲豆沙糕">
                             </div>
-                        </a>  
-                            <div class="product-text">
-                                <h3>翡翠金絲豆沙糕10入</h3>
-                                    
-                                </div>   
-                            <div class="product-intro-bottom">  
-                                <p>NT$500</p>
-                                <div class="product-footer">
+                        </a>
+                        <div class="product-text">
+                            <h3>翡翠金絲豆沙糕10入</h3>
+
+                        </div>
+                        <div class="product-intro-bottom">
+                            <p>NT$500</p>
+                            <div class="product-footer">
                                 <input type="image" src="Images/+.png" alt="加入購物車">
-                                
-                                    
-                                </div>
+
+
                             </div>
-                        
+                        </div>
+
                     </div>
                     <div class="col">
                         <a href="#">
                             <div class="product-img">
                                 <img src="Images/yolkcake_6.png" id="yolkcake" alt="相思團圓蛋黃酥">
                             </div>
-                        </a>  
-                            <div class="product-text">
-                                <h3>相思團圓蛋黃酥12入</h3>
-                                    
-                                </div>   
-                            <div class="product-intro-bottom">  
-                                <p>NT$600</p>
-                                <div class="product-footer">
+                        </a>
+                        <div class="product-text">
+                            <h3>相思團圓蛋黃酥12入</h3>
+
+                        </div>
+                        <div class="product-intro-bottom">
+                            <p>NT$600</p>
+                            <div class="product-footer">
                                 <input type="image" src="Images/+.png" alt="加入購物車">
-                                
-                                    
-                                </div>
+
+
                             </div>
-                        
+                        </div>
+
                     </div>
                     <div class="col">
                         <a href="#">
                             <div class="product-img">
                                 <img src="Images/5-6.png" id="5-6" alt="伍仁蓮蓉月餅">
                             </div>
-                        </a>  
-                            <div class="product-text">
-                                <h3>伍仁蓮蓉月餅6入</h3>
-                            </div>   
-                            <div class="product-intro-bottom">  
-                                <p>NT$400</p>
-                                <div class="product-footer">
+                        </a>
+                        <div class="product-text">
+                            <h3>伍仁蓮蓉月餅6入</h3>
+                        </div>
+                        <div class="product-intro-bottom">
+                            <p>NT$400</p>
+                            <div class="product-footer">
                                 <input type="image" src="Images/+.png" alt="加入購物車">
-                                
-                                    
-                                </div>
+
+
                             </div>
-                        
+                        </div>
+
                     </div>
                     <div class="btn-right">
 
@@ -186,44 +218,44 @@
                 </div>
             </div>
         </div>
-        <!-- 頁底 -->
-        <div class="footer">
-            <footer id="footer-body">
-                <div class="footer-content">
-                    <div class="footer-left">
+            <!-- footer -->
+    <section id="footer">
+        <footer>
+            <!-- 回到頁頂 -->
+            <div class="pagetop">
+                <a href="#">
+                    <img src="Images/pagetop.png" alt="回到頁頂">
+                </a>
+            </div>
+            <!-- 購物車 -->
+            <div class="shoppingcart-icon">
+                <a href="order.html">
+                    <img src="Images/shoppingcart.png" alt="購物車">
+                </a>
+            </div>
+    
+            <div class="footer-body container">
+                <div class="footer-row row row-cols-1 row-cols-md-1 row-cols-lg-3 row-cols-xl-3">
+                    <div class="footer-left col">
                         <div class="footer-address">
-                            <div class="footer-address-icon">
-                                <img src="Images/address-icon.png" alt="地址ICON">
-                            </div>
-                            <div class="footer-address-text">
-                                <p>桃園市中壢區復興路46號</p>
-                            </div>
+                            <img src="Images/address-icon.png" alt="地址ICON">
+                            <p>桃園市中壢區復興路46號</p>
                         </div>
                         <div class="footer-tel">
-                            <div class="footer-tel-icon">
-                                <img src="Images/tel-icons.png" alt="電話ICON">
-                            </div>
-                            <div class="footer-tel-text">
-                                <p>03-4123567</p>
-                            </div>
+                            <img src="Images/tel-icons.png" alt="電話ICON">
+                            <p>03-4123567</p>
                         </div>
                         <div class="footer-email">
-                            <div class="footer-email-icon">
-                                <img src="Images/email-icons.png" alt="郵件icon">
-                            </div>
-                            <div class="footer-email-text">
-                                <p>funeatpastries@gmail.com</p>
-                            </div>
-    
+                            <img src="Images/email-icons.png" alt="郵件icon">
+                            <p>funeatpastries@gmail.com</p>
                         </div>
-                            
                     </div>
-                    <div class="footer-logo">
+                    <div class="footer-logo col">
                         <a href="index.html">
-                            <img src="Images/footer-logo.png" alt="">  
+                            <img src="Images/footer-logo.png" alt="footer-logo">
                         </a>
                     </div>
-                    <div class="footer-right">
+                    <div class="footer-right col">
                         <div class="footer-icons">
                             <div class="icons-ig">
                                 <a href="#">
@@ -241,27 +273,17 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="footer-time">
-                            <p>營業時間：周一至周六 10:00 ~ 19:00</p>
-                        </div>
+                        <p class="footer-time">營業時間：周一至周六 10:00 ~ 19:00</p>
+                        
                     </div>
-    
                 </div>
-                <h3>本網站為緯育TibaMe前端工程師班第88期學員專題作品，僅供學習、展示之用無商業用途
-                    如作品有冒犯到任何智慧財產權請聯繫l09250701@gmail.com，會盡速撤銷作品</h3>
-            </footer>
-        </div>
 
-        <div class="pagetop">
-            <a href="#">
-                <img src="Images/pagetop.png" alt="回到頁頂">
-            </a>
-        </div>
-        <div class="shoppingcart-icon">
-            <a href="order.html">
-                <img src="Images/shoppingcart.png" alt="購物車">
-            </a>
-        </div>
+                <div class="footer-row row row-cols-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1">
+                    <h3 class="footer-text col">本網站為緯育TibaMe前端工程師班第88期學員專題作品，僅供學習、展示之用無商業用途</h3>
+                </div>
+            </div>
+        </footer>
+    </section>
 
 
 
@@ -286,6 +308,7 @@
 
 
 
-    </div>    
+    </div>
 </body>
+
 </html>

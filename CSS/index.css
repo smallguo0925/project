@@ -3,51 +3,6 @@
     src: url(https://cdn.jsdelivr.net/gh/max32002/FakePearl@1.1/webfont/FakePearl-Regular.woff2) format("woff2")
     , url(https://cdn.jsdelivr.net/gh/max32002/FakePearl@1.1/webfont/FakePearl-Regular.woff) format("woff");
 }
-html{
-    background-color: #fffbf0;
-    font-family: FakePearl-Regular;
-    letter-spacing: 2px;
-    line-height: 270%;
-    font-size: 20px;
-}
-::selection {
-	background: #9D2933;
-	color: #fff;
-}
-/* 導覽列 */
-.navbar {
-    max-width: 1920px;
-    box-sizing: border-box;
-    display: grid;
-    align-items: start;
-    grid-template-columns: repeat(7, 1fr); 
-    height: 90px; 
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    background-color: #9D2933;
-    text-align: center;
-    justify-content: center;
-    z-index: 10;
-}
-.navbar a {
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    padding-top: 10px;
-    font-size: 24px;
-    letter-spacing: 2px;
-    font-family: FakePearl-Regular;
-    text-align: center;
-}
-.navbar a:not(.nav-logo){
-    padding: 33px 0px;
-}
-.navbar a:not(.nav-logo):hover{
-    background-color: #C3272B;
-}
-
 /* BANNER */
 
 .banner img{
@@ -180,8 +135,6 @@ html{
 .diy-bodytop-text p{
     margin: 34px;
 }
-
-
 .diy-body-bottom{
     display: grid;
     grid-auto-flow: row;
@@ -323,112 +276,7 @@ html{
     background: url(../Images/sop-oven.png) no-repeat;
 
 }
-/* 頁底 */
-#footer-body{
-    background-color: #9D2933;
-    color: white;
-    font-family: FakePearl-Regular;
-    max-width: 1920px;
-    width: 100%;
-    letter-spacing: 2px
 
-}
-.footer-content{
-    display: flex;
-    font-size: 16px;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-    padding-top: 20px;
-    
-}
-.footer-left{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    
-}
-.footer-address{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-}
-.footer-address-icon img{
-    width: 100%;
-    vertical-align: top;
-
-}
-.footer-tel{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-}
-.footer-tel-icon img{
-    width: 100%;
-    vertical-align: top;
-}
-.footer-email{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-}
-.footer-email-icon img{
-    width: 100%;
-    vertical-align: top;
-}
-
-.footer-right{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-
-}
-.footer-icons{
-    display: flex;
-    justify-content: start;
-    gap: 34px;
-}
-.footer-icons a{
-    width: 100%;
-    height: 100%;
-}
-.footer-time{
-    padding-top: 9px;
-}
-.footer-logo img{
-    width: 100%;
-    vertical-align: top;
-}
-
-.footer h3{
-    text-align: center;
-    text-wrap: none;
-    font-size: 12px;
-    line-height: 27px;
-    margin-top: 10px;
-}
-
-
-/* 回到頁頂 */
-
-.pagetop{
-    width: 50px;
-    height: 50px;
-    right: 2%;
-    bottom: 2%;
-    position: fixed;
-}
-.shoppingcart-icon{
-    width: 50px;
-    height: 50px;
-    right: 2%;
-    bottom: 10%;
-    position: fixed;
-
-}
 
 
 
