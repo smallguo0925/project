@@ -78,6 +78,9 @@ header ul{
     font-size: 36px;
     text-align: center;
 }
+.divider-bread{
+    margin-bottom: 34px;
+}
 /* footer */
 #footer{
     width: 100%;

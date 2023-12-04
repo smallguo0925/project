@@ -16,16 +16,9 @@
 
 
 /* 介紹 */
-.aboutus-container{
-    display: flex;
+#aboutus-introduce{
+    margin-bottom: 34px;
 }
-
-
-.aboutus-container p{
-    font-size: 16px;
-    font-weight: 100;
-}
-
 #text1{
     margin: 34px 0 0 34px;
     
@@ -58,39 +51,30 @@
 
 /* 左上 */
 /* 用MARGIN調間距 */
-#aboutus-lefttop{
-    background: url(../Images/aboutus-left-top.png) no-repeat  ;
-    width: 560px;
-    height: 560px;
-    margin-right: 34px;
+.aboutus-lefttop {}
+.aboutus-lefttop img{
+    width: 100%;
+    vertical-align: top;
+    margin-bottom: 34px;
     
 }
 
 /* 左下 */
 #aboutus-leftbottom{
-    background: url(../Images/aboutus-left-bottom.png) no-repeat ;
-    width: 610px;
-    height: 610px;
-    
-    /* margin: 34px ; */
+    background: url(../Images/aboutus-left-bottom.png) no-repeat left 2em bottom / 93%;
+
 }
 
 /* 右上 */
-#aboutus-righttop{
-    background: url(../Images/aboutus-right-top.png) no-repeat ;
-    width: 560px;
-    height: 560px;
-    margin-left: 34px;
-    margin-top: 68px;
-    margin-bottom: 34px;
+.aboutus-righttop{
+    background: url(../Images/aboutus-right-top.png) no-repeat right 2em top 2em;
+
 }
 
 /* 右下 */
-#aboutus-rightbottom{
-    background: url(../Images/aboutus-right-bottom.png) no-repeat ;
-    width: 600px;
-    height: 600px;
-    margin-left: 34px;
-    margin-top: 68px;
-    
+#aboutus-rightbottom{}
+#aboutus-rightbottom img{
+    width: 100%;
+    vertical-align: top;
+    margin:34px 0 0 34px;
 }
