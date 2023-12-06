@@ -9,6 +9,7 @@ html{
     letter-spacing: 2px;
     line-height: 270%;
     background-color: #FFFBF0;
+    font-weight: 400;
 }
 ::selection {
 	background: #9D2933;
@@ -46,7 +47,7 @@ header ul{
     position: absolute;
     width: 100%;
     vertical-align: top;
-    top: 1%;
+    top: 10%;
 }
 .nav-li a:hover:not(#nav-logo){
     background-color: #C3272B;

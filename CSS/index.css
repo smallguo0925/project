@@ -5,242 +5,157 @@
 }
 /* BANNER */
 
-.banner img{
+#banner img{
     max-width: 1920px;
     width: 100%;
     vertical-align: top;
+    display: flex;
+    justify-content: center;
 }
-
 /* 熱銷商品 */
-
-.hot-title h2{
-    text-align: center;
-    font-family: FakePearl-Regular;
-    font-size: 36px;
-    margin: 68px 0;
-    letter-spacing: 2px;
-    font-weight: normal;
-
-}
-
-.hot-body{
-    background-color: #FFFBF0;
-    background-image: url(../Images/hot-line.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    max-width: 1920px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+#hot-products>.row{
     justify-content: center;
-    font-family: FakePearl-Regular;
-
 }
-.hot-product{
-    display: flex;
-    /* flex-wrap: wrap; */
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-}
-.hot-product img{
-    width: 100%;
-}
-.hot-productleft{
-    cursor: pointer;
-}
-.hot-productright{
-    cursor: pointer;
-}
-.hot-productitem{
-    display: flex;
-    flex-direction: column;
-
-}
-.hot-producttext{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;  
-    font-size: 24px;
-    letter-spacing: 2px; 
-    line-height: 270%;
-    
-}
-.hot-footer{
-    display: flex;
-    justify-content: center;
-    
-}
-
-.hot-footer a{
-    text-decoration: none;
-    color: #fff;
-    text-align: center; 
-    line-height: 75px; 
-    width: 255px;
-    height: 70px;
-    color: #fff;
-    background-color: #DBC5AE;
-    border-radius: 50px;
-    letter-spacing: 3px;
-    font-family: FakePearl-Regular;
-    font-size: 20px;
-    margin: 68px ;
-
-}
-.hot-footer a:hover{
-    background-color: #E6CAA2;
-}
-
-/* 手作課程 */
-
-.diy{
-    background:url(../Images/diy-bgcright.png) no-repeat right top,url(../Images/diy-bgcleft.png) no-repeat left bottom , rgba(255,242,223,1) url(../Images/html-BGC.png) repeat left top / cover;
-    max-width: 1920px;
-    width: 100%;
-}
-.diy-title h2{
-    font-size: 36px;
-    font-family: FakePearl-Regular;
-    text-align: center;
-    font-weight: normal;
-    padding: 68px 0 34px 0;
-    letter-spacing: 2px; 
-
-}
-.diy-body{
-    font-family: FakePearl-Regular;
-    font-size: 32px;
-}
-
-.diy-body-top{
-    display: flex;
-    align-items: center;
-    padding: 34px 68px 0 68px;
-    margin-bottom: -68px;
-    
-}
-.diy-bodytop-img img{
-    width: 100%;
-    vertical-align: top;
-}
-.diy-bodytop-text{
-    display: flex;
-    flex-direction: column;
-    letter-spacing: 2px; 
-
-}
-.diy-bodytop-text p{
-    margin: 34px;
-}
-.diy-body-bottom{
-    display: grid;
-    grid-auto-flow: row;
-    grid-template-columns: repeat(2,1fr);
-    column-gap: 150px;
-    /* align-items: center;
-    justify-content: end; */
-    padding: 0 68px 34px 68px;
-    
-}
-.diy-bodybottom-text{
-    align-self: center;
-    justify-self: end;
-    letter-spacing: 2px; 
-
-}
-.diy-bodybottom-text p{
-    margin: 68px 0;
-}
-
-.diy-footer{
-    display: flex;
-    justify-content: center;
-
-}
-.diy-footer a{
-    text-decoration: none;
-    color: #fff;
-    text-align: center; 
-    line-height: 75px; 
-    width: 255px;
-    height: 70px;
-    color: #fff;
-    background-color: #DBC5AE;
-    border-radius: 50px;
-    letter-spacing: 3px;
-    font-family: FakePearl-Regular;
-    font-size: 20px;
-    margin-bottom: 68px ;
-
-}
-.diy-footer a:hover{
-    background-color: #E6CAA2;
-}
-
-/* 製作過程 */
-
-.sop-body{
-    max-width: 1920px;
-    width: 100%;
-    background: #FFFBF0 url(../Images/sop-bgc-line.png) repeat left top / cover;
+.hot-products-body{
     position: relative;
+}
+.hot-products-left{
+    position: absolute;
+    top: 50%;
+    left:-5%;
+    cursor: pointer;
+}
+.hot-products-right{
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    right:-5%;
+    cursor: pointer;
 
 }
-.sop-title {
-    font-family: FakePearl-Regular;
+.hot-products-title h2{
     text-align: center;
     font-size: 36px;
-    font-weight: 100;
-    padding: 68px;
-    letter-spacing: 2px;
+    margin: 34px 0;
+    font-weight: 500;
 }
-.sop-title p{
-    font-size: 32px;
-    margin-top: 34px;
-}
-.sop-content{
+.hotproducts{
     display: flex;
     flex-direction: column;
-    font-size: 32px;
-    font-family: FakePearl-Regular;
-    letter-spacing: 2px;
-    line-height: 340%;
+}
+.hotproduct-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hotproduct-text p{
+    margin: 20px 0;
+    font-size: 24px;
+}
+.hotproducts-footer-a{
+    display: flex;
+    justify-content: center;
+}
+.hotproducts-footer-a a{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DBC5AE;
+    text-align: center;
+    width: 10em;
+    padding: 1em 0;
+    border-radius: 50px;
+    margin: 34px 0;
+}
+.hotproducts-footer-a a:hover{
+    background-color: #E6CAA2;
+}
+@media (max-width:768px) {
+    .hot-products-right{
+        display: none;
+    }
+    .hot-products-left{
+        display: none;
+    }
+}
+/* DIY */
+#DIY{
+    background: #FFF2DF url(../Images/html-BGC.png);
+}
+.DIY-body-title h2{
+    text-align: center;
+    font-size: 36px;
+    margin: 34px 0;
+    font-weight: 500;
+}
 
-}
-.sop-step1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.sop-step2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: -14px;
-}
-.sop-step3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: -22px;
-}
-.sop-step4{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -52px;
-}
-.sop-step-img img{
+.diy-img img{
     width: 100%;
     vertical-align: top;
+    max-width: 600px;
 }
-.sop-step-text{
-    text-align: left;
+.DIY-body-main>.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+.DIY-body-main{
+    gap: 10px;
+}
+.diy-text{
+    width: 100%;
+    max-width: 590px;
+}
+.diy-text p{
+    margin: 34px 0;
+}
+.DIY-body-main>.col:nth-child(3){
+    align-items: flex-end;
+}
+.DIY-body-footer {
+    justify-content: center;
+}
+.DIY-body-footer a{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DBC5AE;
+    text-align: center;
+    width: 10em;
+    padding: 1em 0;
+    border-radius: 50px;
+    margin: 34px 0;
+}
+.DIY-body-footer a:hover{
+    background-color: #E6CAA2;
+}
+.DIY-mobilebody{
+    display: none;
+}
+@media (max-width: 768px) {
+    .DIY-mobilebody{
+        display: flex;
+        width: 100%;
+        max-width: 768px;
+        background: url(../Images/DIY-mobile.svg) no-repeat center center ,url(../Images/DIY-mobilebgc.png) no-repeat top 50% left 0
+    }
+    .DIY-body-title{
+        display: none;
+    }
+    .DIY-body-main{
+        display: none;
+    }
+    .DIY-body-footer{
+        display: none;
+    }
+}
+
+/* 四個小圖案 */
 .flour{
     position: absolute;
     top: 270px;
@@ -276,8 +191,3 @@
     background: url(../Images/sop-oven.png) no-repeat;
 
 }
-
-
-
-
-
