@@ -95,7 +95,7 @@
 .diy-img img{
     width: 100%;
     vertical-align: top;
-    max-width: 600px;
+    max-width: 590px;
 }
 .DIY-body-main>.col{
     display: flex;
@@ -136,13 +136,34 @@
 }
 .DIY-mobilebody{
     display: none;
+    max-width: 768px;
+    width: 100%;
+    padding: 50% 0;
 }
+
+.DIY-mobilebody-text{
+    background: url(../Images/DIY-mobilebgc.png)no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 768px;
+}
+.DIY-mobilebody-text p{
+    color: #fff;
+    padding: 5% 0;
+    font-size: 24px;
+}
+
+
 @media (max-width: 768px) {
     .DIY-mobilebody{
         display: flex;
+        flex-direction: column;
+        justify-content: center;
         width: 100%;
         max-width: 768px;
-        background: url(../Images/DIY-mobile.svg) no-repeat center center ,url(../Images/DIY-mobilebgc.png) no-repeat top 50% left 0
+        min-width: 480px;
+        background: url(../Images/DIY-mobile.svg) no-repeat center /cover;
     }
     .DIY-body-title{
         display: none;
