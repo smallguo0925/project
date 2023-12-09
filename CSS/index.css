@@ -13,6 +13,9 @@
     justify-content: center;
 }
 /* 熱銷商品 */
+.hotproducts img{
+    width: 100%;
+}
 #hot-products>.row{
     justify-content: center;
 }
@@ -82,6 +85,9 @@
     }
 }
 /* DIY */
+.DIY-body-main{
+    flex-wrap: nowrap;
+}
 #DIY{
     background: #FFF2DF url(../Images/html-BGC.png);
 }
@@ -175,40 +181,120 @@
         display: none;
     }
 }
+/* SOP */
+.sop-body{
+    position: relative;
+}
+.sop-body-title{
+    text-align: center;
+    margin: 34px;
+}
+.sop-body-title>.col{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.sop-body-title h2{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.step-img img{
+    width: 100%;
+    max-width: 400px;
+}
+.sop-body-main>.col{
+    display: flex;
+    flex-wrap:wrap ;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 32px;
+    gap: 34px;
+    align-items: center;
+    
+}
+.step-img{
+    align-items: center;
+}
+
+
+.step-text{
+    text-align: left;
+}
+/* 四個虛線背景圖 */
+.circleline1{
+    background: url(../Images/sop-dashline1.png) no-repeat right top /93%;
+    position: absolute;
+    width: 600px;
+    padding-bottom: 50%;
+    right: 6%;
+    top: 7%;
+}
+.circleline2{
+    background: url(../Images/sop-dashline2.png) no-repeat right top /93%;
+    position: absolute;
+    width: 600px;
+    padding-bottom: 50%;
+    left: 3%;
+    top: 30%;
+}
+.circleline3{
+    background: url(../Images/sop-dashline3.png) no-repeat center /93%;
+    position: absolute;
+    width: 600px;
+    padding-bottom: 51%;
+    right: 4%;
+    top: 52%;
+}
+.circleline4{
+    background: url(../Images/sop-dashline4.png) no-repeat right top /93%;
+    position: absolute;
+    width: 600px;
+    padding-bottom: 50%;
+    left: 2%;
+    bottom: -7%;
+}
+@media (max-width:1199px) {
+    .sop-circleline{
+        display: none;
+    }
+    
+}
 
 /* 四個小圖案 */
 .flour{
+    background: url(../Images/sop-flour.png) no-repeat left top /80%;
     position: absolute;
-    top: 270px;
-    left: 370px;
+    top: 5%;
+    left: 5%;
     width: 170px;
     height: 170px;
-    background: url(../Images/sop-flour.png) no-repeat ;
     
 }
 .rolling-pin{
+    background: url(../Images/sop-rolling\ pin.png) no-repeat right top / 80%;
     position: absolute;
-    top: 32%;
-    right: 18%;
-    width: 360px;
+    top: 46%;
+    right: -8%;
+    width: 250px;
     height: 165px;
-    background: url(../Images/sop-rolling\ pin.png) no-repeat;
 
 }
 .yolk{
+    background: url(../Images/sop-yolkcake.png) no-repeat center / 80%;
     position: absolute;
-    bottom: 38%;
-    left: 19%;
+    bottom: 34%;
+    left: 12%;
     width: 280px;
     height: 280px;
-    background: url(../Images/sop-yolkcake.png) no-repeat;
 }
 .oven{
+    background: url(../Images/sop-oven.png) no-repeat right bottom / 80%;
     position: absolute;
-    bottom: 16%;
-    right: 18%;
-    width: 300px;
+    bottom: 14%;
+    right: 0;
+    width: 250px;
     height: 210px;
-    background: url(../Images/sop-oven.png) no-repeat;
 
 }
