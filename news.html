@@ -37,7 +37,7 @@
                     </li>
                     <li class="nav-li">
                         <a href="index.html" id="nav-logo">
-                            <img src="Images/nav-logo.png" alt="導覽列LOGO">
+                            <img src="Images/nav-logo.svg" alt="導覽列LOGO">
                         </a>
                     </li>
                     <li class="nav-li">
@@ -58,7 +58,35 @@
                 </ul>
             </header>
         </section>
-    
+    <!-- 手機板導覽列 -->
+    <section id="mobile-header">
+        <input type="checkbox" name="" id="menu-switch">
+        <div class="main-header">
+            <!-- -------------------------------- -->
+            <div class="mobile-logo">
+                <a href="index.html">
+                    <img src="Images/mobile-navlogo.svg">
+                </a>
+            </div>
+            <!-- -------------------------------- -->
+            <label for="menu-switch" class="hb">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <!-- -------------------------------- -->
+            <nav class="main-nav">
+                <a href="aboutus.html">關於我們</a>
+                <a href="news.html">最新消息</a>
+                <a href="product-list.html">產品介紹</a>
+                <a href="contactus.html">聯絡資訊</a>
+                <a href="#">會員登入</a>
+                <a href="order.html">訂購專區</a>
+            </nav>
+        </div>
+        <!-- -------------------------------- -->
+
+    </section>
         <!-- 最新消息+繩結+麵包屑 -->
         <section id="divider">
             <div class="divider-container">
@@ -86,8 +114,8 @@
         <!-- 新聞區 -->
         <div class="news-content">
             <div class="news-content-top container">
-                <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2">
-                    <!-- 上面兩個 -->
+                <div class="row row-cols-1 row-cols-md-1 row-cols-lg-3 row-cols-xl-3">
+                    <!-- 上面三個 -->
                     <div class="col">
                         <div class="news-card">
                             <div class="news-card-label">
@@ -114,12 +142,26 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col">
+                        <div class="news-card">
+                            <div class="news-card-label">
+                                活動
+                            </div>
+                            <img src="Images/news4.svg" alt="新聞4">
+                            <div class="news-text">
+                                <h3>糕點藝術展：中式糕點的視覺盛宴</h3>
+                                <time>2023-09-01</time>
+                                <p>「樂食」將舉辦糕點藝術展，展示糕點製作的精湛技藝和獨特風格，歡迎品味之餘一同感受視覺的盛宴。</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
         <div class="new-content2">
             <div class="news-content-bottom container">
-                <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2">
+                <div class="row row-cols-1 row-cols-md-1 row-cols-lg-3 row-cols-xl-3">
                     <!-- 下面兩個 -->
                     <div class="col">
                         <div class="news-card">
@@ -144,6 +186,19 @@
                                 <h3>新品上市：相思團圓蛋黃酥</h3>
                                 <time>2023-07-13</time>
                                 <p>樂食最新上市「相思團圓蛋黃酥」，外皮香酥內餡豐富，以經典的紅豆泥搭配酥脆的餅皮，帶您品味中秋的幸福。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="news-card">
+                            <div class="news-card-label">
+                                新訊
+                            </div>
+                            <img src="Images/news6.png" alt="新聞4">
+                            <div class="news-text">
+                                <h3>美食合作：與知名茶庄合作新品上市</h3>
+                                <time>2023-07-01</time>
+                                <p>「樂食」攜手當地知名茶庄，共同打造新品，以茶香融入糕點之中，讓您同時品味中式糕點與茶的絕妙搭配。</p>
                             </div>
                         </div>
                     </div>
@@ -228,7 +283,37 @@
             </div>
         </footer>
     </section>
-    
+    <!-- mobile footer -->
+    <section id="mobile-footer">
+        <div class="mobile-footer-body container">
+            <div class="mobile-footer-body-left row row-cols-2 row-cols-md-2">
+                <div class="contact-info">
+                    <img src="Images/address-icon.png" alt="">
+                    <p>桃園市中壢區復興路46號</p>
+                </div>
+                <div class="contact-info">
+                    <img src="Images/tel-icons.png" alt="">
+                    <p>03-4123567</p>
+                </div>
+                <div class="contact-info">
+                    <img src="Images/email-icons.png" alt="">
+                    <p>funeatpastries@gmail.com</p>
+                </div>
+                <div class="contact-icon">
+                    <img src="Images/ig-icons.png" alt="">
+                    <img src="Images/fb-icons.png" alt="">
+                    <img src="Images/line-icons.png" alt="">
+                </div>
+                <p>營業時間：周一至周六 10:00 ~ 19:00</p>
+                <h3>本網站為緯育TibaMe前端工程師班第88期學員專題作品，僅供學習、展示之用無商業用途</h3>
+            </div>
+            <div class="mobile-footer-body-right row row-cols-2 row-cols-md-2">
+                <a href="index.html">
+                    <img src="Images/mobile-footerlogo.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
     
     </div>
 

@@ -1,10 +1,9 @@
-@font-face {
-    font-family: FakePearl-Regular;
-    src: url(https://cdn.jsdelivr.net/gh/max32002/FakePearl@1.1/webfont/FakePearl-Regular.woff2) format("woff2")
-    , url(https://cdn.jsdelivr.net/gh/max32002/FakePearl@1.1/webfont/FakePearl-Regular.woff) format("woff");
+#header{
+    padding-bottom: 10%;
 }
-
-
+#mobile-header{
+    padding-bottom: 10%;
+}
 
 /* 分類按鈕 */
 
@@ -15,13 +14,19 @@
     gap: 34px;
     margin-bottom: 34px;
     color: #fff;
+    
 }
 .news-discount{
     text-align: center;
     border-radius: 50px;
     background-color: #DBC5AE;
-    width: 90px;
+    width: 100px;
+    padding:1em 0;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -33,9 +38,13 @@
     text-align: center;
     border-radius: 50px;
     background-color: #DBC5AE;
-    width: 90px;
+    width: 100px;
+    padding:1em 0;
     cursor: pointer;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .news-activity:hover{
@@ -46,9 +55,13 @@
     text-align: center;
     border-radius: 50px;
     background-color: #DBC5AE;
-    width: 90px;
+    width: 100px;
+    padding:1em 0;
     cursor: pointer;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .news-news:hover{
@@ -57,7 +70,7 @@
 
 /* 新聞區 */
 .news-content{
-    /* max-width: 1200px; */
+    /* max-width: 1920px; */
     background: rgba(255,242,223,1) url(../Images/html-BGC.png) repeat left top / cover;
 }
 .col{
@@ -84,25 +97,34 @@
     border-radius: 30px 30px 0 0;
 }
 .news-card-label{
-    background-color: #F2ECDE;
+    background-color: #dfd5bc;
     position: absolute;
-    top: 20px;
-    left: -10px;
-    border-radius: 15px;
-    width: 15%;
+    top: 5%;
+    left: -8%;
+    border-radius: 10px;
+    padding: 5px;
+    width: 4em;
     text-align: center;
     box-shadow: 1px 1px 2px #DBC5AE;
 }
 
 .news-text{
+    line-height: 27px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     padding: 34px;
     border-radius: 0 0 30px 30px;
-    /* height: 100%; */
 }
 
 .news-text h3{
     font-size: 20px;
     font-weight: 400;
+}
+@media (max-width:768px) {
+    .news-card-label{
+        left: -2%;
+    }
 }
 
 /* 換頁 */
