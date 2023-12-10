@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>樂食。|　訂購專區</title>
+    <title>樂食。|　資料填寫</title>
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/grid.css">
-    <link rel="stylesheet" href="CSS/order.css">
     <link rel="stylesheet" href="CSS/element.css">
+    <link rel="stylesheet" href="CSS/writedata.css">
     <link rel="icon" href="Images/icon-logo.png" type="Images/icon-logo.png">
 
 </head>
 <body>
-    <!-- 整個身體 -->
-    <div class="wrap">
-            <!-- 導覽列 -->
+    <!-- 導覽列 -->
     <section id="header">
         <header>
             <ul>
@@ -35,7 +33,7 @@
                 </li>
                 <li class="nav-li">
                     <a href="index.html" id="nav-logo">
-                        <img src="Images/nav-logo.png" alt="導覽列LOGO">
+                        <img src="Images/nav-logo.svg" alt="導覽列LOGO">
                     </a>
                 </li>
                 <li class="nav-li">
@@ -56,6 +54,35 @@
             </ul>
         </header>
     </section>
+    <!-- 手機板導覽列 -->
+    <section id="mobile-header">
+        <input type="checkbox" name="" id="menu-switch">
+        <div class="main-header">
+            <!-- -------------------------------- -->
+            <div class="mobile-logo">
+                <a href="index.html">
+                    <img src="Images/mobile-navlogo.svg">
+                </a>
+            </div>
+            <!-- -------------------------------- -->
+            <label for="menu-switch" class="hb">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <!-- -------------------------------- -->
+            <nav class="main-nav">
+                <a href="aboutus.html">關於我們</a>
+                <a href="news.html">最新消息</a>
+                <a href="product-list.html">產品介紹</a>
+                <a href="contactus.html">聯絡資訊</a>
+                <a href="#">會員登入</a>
+                <a href="order.html">訂購專區</a>
+            </nav>
+        </div>
+        <!-- -------------------------------- -->
+
+    </section>
     <!-- 繩結分隔線+麵包屑 -->
     <section id="divider">
         <div class="divider-container">
@@ -68,140 +95,55 @@
             </div>
             <div class="divider-bread row row-cols-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-4">
                 <a href="Images/index/index.html">首頁</a> /
-                <a href="#">訂購專區</a>
+                <a href="order.html">訂購專區</a> / 
+                <a href="#">資料填寫</a>
             </div>
         </div>
     </section>
-
-
-        <!-- 訂購步驟小圖 -->
-        <div class="order-stepsmallimg container">
-            <div class="stepsmallimg row row-cols-1 row-cols-md-2 row-cols-lg-4 row-cols-xl-4">
-                <div class="step1 col">
-                    <p>1</p>
-                    <p>確認訂單</p>
-                </div>
-                <div class="step2 col">
-                    <p>2</p>
-                    <p>資料填寫</p>
-                </div>
-                <div class="step3 col">
-                    <p>3</p>
-                    <p>付款/配送方式</p>
-                </div>
-                <div class="step4 col">
-                    <p>4</p>
-                    <p>訂購完成</p>
-                </div>
+    <!-- 訂購步驟小圖 -->
+    <section id="order-stepsmallimg" class="container">
+        <div class="stepsmallimg row row-cols-1 row-cols-md-2 row-cols-lg-4 row-cols-xl-4">
+            <div class="step1 col">
+                <p>1</p>
+                <p>確認訂單</p>
+            </div>
+            <div class="step2 col">
+                <p>2</p>
+                <p>資料填寫</p>
+            </div>
+            <div class="step3 col">
+                <p>3</p>
+                <p>付款/配送方式</p>
+            </div>
+            <div class="step4 col">
+                <p>4</p>
+                <p>訂購完成</p>
             </div>
         </div>
-        <!-- 訂購內容 -->
-        <div class="order-content">
-            <div class="order-content-body container">
-                <div class="content-body row row-cols-1 row-cols-md-1 row-cols-lg-3 row-cols-xl-3">
-                    <div class="content-product col">
-                        商品
-                    </div>
-                    <div class="content-amount col">
-                        規格/數量
-                    </div>
-                    <div class="total col">
-                        小計
-                    </div>
-                </div>
-                <div class="content-body row row-cols-1 row-cols-md-1 row-cols-lg-3 row-cols-xl-3">
-                    <div class="content-product col">
-                        <img src="Images/oreder-product-pineapple.png" alt="鳳梨椰香月餅10入">
-                    </div>
-                    <div class="content-amount col">
-                        <p>鳳梨椰香月餅10入</p>
-                        <div class="number">
-                            <span class="minus">-
-                            </span>
-                            <input type="text" value="1" id="numberbox">
-                            <span class="plus">+
-                            </span>
-                        </div>
-                    </div>
-                    <div class="total col">
-                        <div class="price">
-                            NT$<span>600</span>
-                        </div>
-                        <div class="delete">
-                            <input type="image" src="Images/icons-delete.png" alt="刪除">
-                        </div>
-                    </div>
-                </div>
-                <div class="content-body row row-cols-1 row-cols-md-1 row-cols-lg-3 row-cols-xl-3">
-                    <div class="content-product col">
-                        <img src="Images/order-product-green.png" alt="翡翠金絲豆沙糕10入">
-                    </div>
-                    <div class="content-amount col">
-                        <p>翡翠金絲豆沙糕10入</p>
-                        <div class="number">
-                            <span class="minus">-
-                            </span>
-                            <input type="text" value="1" id="numberbox">
-                            <span class="plus">+
-                            </span>
-                        </div>
-                    </div>
-                    <div class="total col">
-                        <div class="price">
-                            NT$<span>1,000</span>
-                        </div>
-                        <div class="delete">
-                            <input type="image" src="Images/icons-delete.png" alt="刪除">
-                        </div>
-                    </div>
+    </section>
+    <!-- 資料填寫 -->
+    <section id="writedata">
+        <div class="writedata-body container">
 
-
-                </div>
-                <div class="content-body row row-cols-1 row-cols-md-1 row-cols-lg-3 row-cols-xl-3">
-                    <div class="content-product col">
-                        <p>總計</p>
-                    </div>
-                    <div class="content-amount col">
-                        <p><span>3</span>個</p>
-                    </div>
-                    <div class="total col">
-                        <div class="price">
-                            NT$<span>1,600</span>
-                        </div>
-                    </div>
-                    
-                </div>
-
-            </div>
+            
+            
         </div>
+    </section>
 
-        <!-- 按扭區 -->
-        <div class="order-btns">
-            <div class="order-btns-content container">
-                <div class="btns-content row row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2">
-                    <div class="btn-left col">
-                        <a href="product-list.html">更多商品</a>
-                    </div>
-                    <div class="btn-right col">
-                        <a href="order-finish.html">前往結帳</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    <!-- footer -->
+    <!-- footer -->    
     <section id="footer">
         <footer>
             <!-- 回到頁頂 -->
             <div class="pagetop">
-                <a href="#">
+                <!-- <a href="#">
                     <img src="Images/pagetop.png" alt="回到頁頂">
-                </a>
+                </a> -->
             </div>
             <!-- 購物車 -->
             <div class="shoppingcart-icon">
-                <a href="order.html">
+                <!-- <a href="order.html">
                     <img src="Images/shoppingcart.png" alt="購物車">
-                </a>
+                </a> -->
             </div>
     
             <div class="footer-body container">
@@ -254,6 +196,37 @@
             </div>
         </footer>
     </section>
-    </div>
+    <!-- mobile footer -->
+    <section id="mobile-footer">
+        <div class="mobile-footer-body container">
+            <div class="mobile-footer-body-left row row-cols-2 row-cols-md-2">
+                <div class="contact-info">
+                    <img src="Images/address-icon.png" alt="">
+                    <p>桃園市中壢區復興路46號</p>
+                </div>
+                <div class="contact-info">
+                    <img src="Images/tel-icons.png" alt="">
+                    <p>03-4123567</p>
+                </div>
+                <div class="contact-info">
+                    <img src="Images/email-icons.png" alt="">
+                    <p>funeatpastries@gmail.com</p>
+                </div>
+                <div class="contact-icon">
+                    <img src="Images/ig-icons.png" alt="">
+                    <img src="Images/fb-icons.png" alt="">
+                    <img src="Images/line-icons.png" alt="">
+                </div>
+                <p>營業時間：周一至周六 10:00 ~ 19:00</p>
+                <h3>本網站為緯育TibaMe前端工程師班第88期學員專題作品，僅供學習、展示之用無商業用途</h3>
+            </div>
+            <div class="mobile-footer-body-right row row-cols-2 row-cols-md-2">
+                <a href="index.html">
+                    <img src="Images/mobile-footerlogo.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
