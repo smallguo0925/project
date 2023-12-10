@@ -1,27 +1,38 @@
-@font-face {
-    font-family: FakePearl-Regular;
-    src: url(https://cdn.jsdelivr.net/gh/max32002/FakePearl@1.1/webfont/FakePearl-Regular.woff2) format("woff2")
-    , url(https://cdn.jsdelivr.net/gh/max32002/FakePearl@1.1/webfont/FakePearl-Regular.woff) format("woff");
+#header{
+    padding-bottom: 10%;
+}
+#mobile-header{
+    padding-bottom: 10%;
 }
 /*  聯絡我們資訊  */
+
 .cotactus-info{
     max-width: 1200px;
     width: 100%;
 }
+.contactus-box{
+    justify-content: center;
+}
+#sign{
+    padding: 0;
+}
 #sign img{
     width: 100%;
     vertical-align: top;
+    border-radius: 20px 0 0 20px;
 }
 #infotext{
     background-color: #F2ECDE;
     border-radius: 0 20px 20px 0px;
     display: flex;
     justify-content: center;
+    padding: 0;
 }
 .contactus-info-border{
     border: 1px solid #E3D8C6;
     padding: 34px;
     border-radius: 20px;
+    margin: 34px 0;
 }
 
 .contactus-text{
@@ -44,13 +55,70 @@
     background-color: #DBC5AE;
     color: #fff;
     text-decoration: none;
-    padding: 10px 20px ;
+    padding: 1rem 2rem ;
     border-radius: 50px;
     margin-left: 34px;
 }
 .contactus-btn a:hover{
     background-color: #E6CAA2;
 
+}
+
+@media (max-width:1024px) {
+    #sign img{
+        width: 90%;
+        vertical-align: top;
+        border-radius: 20px 20px 0 0 ;
+    }
+    #infotext{
+        width: 90%;
+        background-color: #F2ECDE;
+        border-radius: 0 0 20px 20px;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    #infotext p{
+        font-size: 16px;
+    }
+    .contactus-info-border{
+        width: 80%;
+        border: 1px solid #E3D8C6;
+        padding: 34px;
+        border-radius: 20px;
+        margin: 34px 0;
+    }
+    .contactus-text{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        font-size: 20px;
+    }
+    .contactus-box>.col{
+        display: flex;
+        justify-content: center;
+        width: 80%;
+
+    }
+    .contactus-text-footer{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        gap: 10px;
+        margin: 10px;
+    }
+    .contactus-icons img{
+        width: 80%;
+    }
+    .contactus-btn a{
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    
+    
+    
 }
 /* 地圖 */
 .contactus-map{
@@ -65,26 +133,45 @@
 }
 .contactus-mapbox{
     width: 100%;
-    height: 0;
     padding-bottom: 75%;
     background-color: #fffbf0;
     position: relative;
 }
 .contactus-mapbox iframe{
     width: 100%;
-    height: 100%;
+    padding-bottom: 75%;
     position: absolute;
     border-radius: 20px;
+}
+@media (max-width:768px) {
+    .contactus-mapbox{
+        width: 100%;
+        padding-bottom: 75%;
+        background-color: #fffbf0;
+        position: relative;
+    }
+    
+    .contactus-mapbox iframe{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border-radius: 20px;
+    }
+    
 }
 
 /* 背景圓圈線 */
 .contactus-circleline{
     position: absolute;
-    right: 6%;
-    top: 26%;
+    right: 7%;
+    top: 60%;
 }
 .contactus-circleline img{
     width: 100%;
     vertical-align: top;
 }
-
+@media (max-width:1024px) {
+    .contactus-circleline{
+        display: none;
+    }
+}

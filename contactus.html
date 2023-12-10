@@ -37,7 +37,7 @@
                     </li>
                     <li class="nav-li">
                         <a href="index.html" id="nav-logo">
-                            <img src="Images/nav-logo.png" alt="導覽列LOGO">
+                            <img src="Images/nav-logo.svg" alt="導覽列LOGO">
                         </a>
                     </li>
                     <li class="nav-li">
@@ -58,6 +58,35 @@
                 </ul>
             </header>
         </section>
+    <!-- 手機板導覽列 -->
+    <section id="mobile-header">
+        <input type="checkbox" name="" id="menu-switch">
+        <div class="main-header">
+            <!-- -------------------------------- -->
+            <div class="mobile-logo">
+                <a href="index.html">
+                    <img src="Images/mobile-navlogo.svg">
+                </a>
+            </div>
+            <!-- -------------------------------- -->
+            <label for="menu-switch" class="hb">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <!-- -------------------------------- -->
+            <nav class="main-nav">
+                <a href="aboutus.html">關於我們</a>
+                <a href="news.html">最新消息</a>
+                <a href="product-list.html">產品介紹</a>
+                <a href="contactus.html">聯絡資訊</a>
+                <a href="#">會員登入</a>
+                <a href="order.html">訂購專區</a>
+            </nav>
+        </div>
+        <!-- -------------------------------- -->
+
+    </section>
     <!-- 繩結分隔線+麵包屑 -->
     <section id="divider">
         <div class="divider-container">
@@ -75,36 +104,36 @@
         </div>
     </section>
 
-        <!-- 聯絡我們資訊 -->
-        <div class="cotactus-info">
-            <div class="contactus-info-border">
-                <div class="contactus-box row row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2">
-                    <div class="col" id="sign">
-                        <img src="Images/contactus-sign.png" alt="招牌照片">
-                    </div>
-                    <div class="col" id="infotext">
-                        <div class="contactus-text">
-                            <p>店鋪位置：桃園市中壢區復興路46號</p>
-                            <p>TEL : 03-4123567</p>
-                            <p>EMAIL : funeatpastries@gmail.com</p>
-                            <p>營業時間：周一至周六 10:00 ~ 19:00</p>
-                            <p>歡迎追蹤訂閱我們</p>
+    <!-- 聯絡我們資訊 -->
+    <div class="cotactus-info container">
+        <div class="contactus-info-border ">
+            <div class="contactus-box row row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2">
+                <div class="col" id="sign">
+                    <img src="Images/contactus-sign.png" alt="招牌照片">
+                </div>
+                <div class="col" id="infotext">
+                    <div class="contactus-text">
+                        <p>店鋪位置：桃園市中壢區復興路46號</p>
+                        <p>TEL : 03-4123567</p>
+                        <p>EMAIL : funeatpastries@gmail.com</p>
+                        <p>營業時間：周一至周六 10:00 ~ 19:00</p>
+                        <p>歡迎追蹤訂閱我們</p>
 
-                            <div class="contactus-text-footer">
-                                <div class="contactus-icons">
-                                    <a href="#"><img src="Images/contactus-IG ICON.png" alt="IG-icon"></a>
-                                    <a href="#"><img src="Images/contactus-LINE ICON.png" alt="line-icon"></a>
-                                    <a href="#"><img src="Images/contactus-FB ICON.png" alt="fb-icon"></a>
-                                </div>
-                                <div class="contactus-btn">
-                                    <a href="#">點我填寫聯絡表單</a>
-                                </div>
+                        <div class="contactus-text-footer">
+                            <div class="contactus-icons">
+                                <a href="#"><img src="Images/contactus-IG ICON.png" alt="IG-icon"></a>
+                                <a href="#"><img src="Images/contactus-LINE ICON.png" alt="line-icon"></a>
+                                <a href="#"><img src="Images/contactus-FB ICON.png" alt="fb-icon"></a>
+                            </div>
+                            <div class="contactus-btn">
+                                <a href="#">點我填寫聯絡表單</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
         <!-- 地圖定位+繩結 -->
     <section id="divider">
         <div class="divider-container">
@@ -125,7 +154,7 @@
                     <div class="contactus-map-border">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.2491781960202!2d121.22051658885496!3d24.957635500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346823ea50c732a5%3A0x1b5e6ee66e9fec49!2z57ev6IKyVGliYU1l6ZmE6Kit5Lit5aOi6IG36KiT5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1700905796781!5m2!1szh-TW!2stw"
-                            width="1000" height="700" style="border:0;" allowfullscreen="" loading="lazy"
+                            width="1132" height="500" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                     </div>
@@ -134,9 +163,9 @@
         </div>
 
         <!-- 背景線 -->
-        <div class="contactus-circleline">
+        <!-- <div class="contactus-circleline">
             <img id="circle" src="Images/contactus-line.png" alt="背景圓圈線">
-        </div>
+        </div> -->
     <!-- footer -->
     <section id="footer">
         <footer>
@@ -203,7 +232,37 @@
             </div>
         </footer>
     </section>
-
+    <!-- mobile footer -->
+    <section id="mobile-footer">
+        <div class="mobile-footer-body container">
+            <div class="mobile-footer-body-left row row-cols-2 row-cols-md-2">
+                <div class="contact-info">
+                    <img src="Images/address-icon.png" alt="">
+                    <p>桃園市中壢區復興路46號</p>
+                </div>
+                <div class="contact-info">
+                    <img src="Images/tel-icons.png" alt="">
+                    <p>03-4123567</p>
+                </div>
+                <div class="contact-info">
+                    <img src="Images/email-icons.png" alt="">
+                    <p>funeatpastries@gmail.com</p>
+                </div>
+                <div class="contact-icon">
+                    <img src="Images/ig-icons.png" alt="">
+                    <img src="Images/fb-icons.png" alt="">
+                    <img src="Images/line-icons.png" alt="">
+                </div>
+                <p>營業時間：周一至周六 10:00 ~ 19:00</p>
+                <h3>本網站為緯育TibaMe前端工程師班第88期學員專題作品，僅供學習、展示之用無商業用途</h3>
+            </div>
+            <div class="mobile-footer-body-right row row-cols-2 row-cols-md-2">
+                <a href="index.html">
+                    <img src="Images/mobile-footerlogo.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
 
 
 
