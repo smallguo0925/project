@@ -1,7 +1,8 @@
-@font-face {
-    font-family: FakePearl-Regular;
-    src: url(https://cdn.jsdelivr.net/gh/max32002/FakePearl@1.1/webfont/FakePearl-Regular.woff2) format("woff2")
-    , url(https://cdn.jsdelivr.net/gh/max32002/FakePearl@1.1/webfont/FakePearl-Regular.woff) format("woff");
+#header{
+    padding-bottom: 15%;
+}
+#mobile-header{
+    padding-bottom: 10%;
 }
 
 /* 訂購步驟小圖 */
@@ -71,21 +72,28 @@
 /* 訂購內容 */
 .order-content{
     margin-top: 3.4rem;
+    margin-bottom: 3.4rem;
+
 }
 .content-body{
     text-align: center;
     padding: 34px;
-    border-bottom: 1px solid #000;
     position: relative;
-
 }
-.content-body:nth-child(4){
-    border-bottom:none ;
-    padding: 3.4rem;
-
+.content-body:not(:nth-child(4))::after{
+    content: '';
+    width: 80%;
+    height: 2px;
+    background-color: #d9d0c6;
+    position: absolute;
+    left: 9%;
+    top: 95%;
+    box-sizing: border-box;
 }
+
 .order-content-body{
     background-color: #F2ECDE;
+    border-radius: 20px;
 }
 .number {
     display: flex;
@@ -170,7 +178,25 @@ border-radius: 30px;
 }
 [class*=btn-] > a:hover{
     background-color: #E6CAA2;
+    color: #000;
 }
     
+@media (max-width:768px) {
+    [class*=btn-] > a{
+        margin: 1rem 0 2rem 0;
+        padding: 1rem 3rem;
 
+    }
+    [class*=btn-]{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px 34px;
+        margin: 0;
+    }
+    .content-body>.col{
+        gap: 10px;
+        padding: var(--column-gap) var(--column-gap)
+    }
 
+}

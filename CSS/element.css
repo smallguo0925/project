@@ -56,6 +56,7 @@ header ul{
     color: white;
     text-decoration: none;
     width: 180px;
+    /* 180/1024*100 vw */
     height:  90px;
     transition: all .2s linear;
     font-size: 24px;
