@@ -1,7 +1,8 @@
-@font-face {
-    font-family: FakePearl-Regular;
-    src: url(https://cdn.jsdelivr.net/gh/max32002/FakePearl@1.1/webfont/FakePearl-Regular.woff2) format("woff2")
-    , url(https://cdn.jsdelivr.net/gh/max32002/FakePearl@1.1/webfont/FakePearl-Regular.woff) format("woff");
+#header{
+    padding-bottom: 15%;
+}
+#mobile-header{
+    padding-bottom: 10%;
 }
 
 /* 身體 */
@@ -11,69 +12,41 @@
 .order-stepsmallimg{
     max-width: 800px;
 }
-
+.stepsmallimg>.col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .step1 p:first-child{
-    background: url(../Images/order-otherstep.png) no-repeat left top;
-    width: 45px;
-    height: 45px;
+    background: url(../Images/order-otherstep.png) no-repeat center;
+    width: 2.5rem;
+    height: 2.5rem;
     text-align: center;
     vertical-align: middle;
-    
-    
+    padding-top: 1.4rem;
 }
 .step2 p:first-child{
-    background: url(../Images/order-otherstep.png) no-repeat left top;
-    width: 45px;
-    height: 45px;
+    background: url(../Images/order-otherstep.png) no-repeat center;
+    width: 2.5rem;
+    height: 2.5rem;
     text-align: center;
-    
-    
+    padding-top: 1.4rem;
 
 }
 .step3 p:first-child{
-    background: url(../Images/order-otherstep.png) no-repeat left top;
-    width: 45px;
-    height: 45px;
+    background: url(../Images/order-otherstep.png) no-repeat center;
+    width: 2.5rem;
+    height: 2.5rem;
     text-align: center;
-    
-    
+    padding-top: 1.4rem;
 
 }
 .step4 p:first-child{
-    background: url(../Images/other-step-ing.png) no-repeat left top;
-    width: 50px;
-    height: 50px;
+    background: url(../Images/other-step-ing.png) no-repeat center;
+    width: 2.5rem;
+    height: 2.5rem;
     text-align: center;
-    
-
-}
-
-
-.step1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.step2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-.step3{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-.step4{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding-top: 1.4rem;
 
 }
 
@@ -84,15 +57,22 @@
     justify-content: center;
     margin: 68px;
 }
-.col{
+.finish-info>.row>.col{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
+.finish-info>.row{
+    margin: 34px calc(var(--column-gap) * -1);
+}
 .finish-info{
     max-width: 800px;
+}
+.infonum{
+    display:inline;
+    margin: 34px;
 }
 
 /* 更多商品按紐 */
@@ -107,7 +87,7 @@
     text-decoration: none;
     background-color: #DBC5AE;
     border-radius: 30px;
-    padding: 0 2rem;
+    padding: 1rem 2rem;
     margin:auto
 }
 .morebtn a:hover{

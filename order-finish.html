@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>樂食。|　訂購完成</title>
     <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="stylesheet" href="CSS/order-finish.css">
     <link rel="stylesheet" href="CSS/grid.css">
+    <link rel="stylesheet" href="CSS/order-finish.css">
     <link rel="stylesheet" href="CSS/element.css">
     <link rel="icon" href="Images/icon-logo.png" type="Images/icon-logo.png">
 
@@ -35,7 +35,7 @@
                 </li>
                 <li class="nav-li">
                     <a href="index.html" id="nav-logo">
-                        <img src="Images/nav-logo.png" alt="導覽列LOGO">
+                        <img src="Images/nav-logo.svg" alt="導覽列LOGO">
                     </a>
                 </li>
                 <li class="nav-li">
@@ -56,6 +56,36 @@
             </ul>
         </header>
     </section>
+    <!-- 手機板導覽列 -->
+    <section id="mobile-header">
+        <input type="checkbox" name="" id="menu-switch">
+        <div class="main-header">
+            <!-- -------------------------------- -->
+            <div class="mobile-logo">
+                <a href="index.html">
+                    <img src="Images/mobile-navlogo.svg">
+                </a>
+            </div>
+            <!-- -------------------------------- -->
+            <label for="menu-switch" class="hb">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <!-- -------------------------------- -->
+            <nav class="main-nav">
+                <a href="aboutus.html">關於我們</a>
+                <a href="news.html">最新消息</a>
+                <a href="product-list.html">產品介紹</a>
+                <a href="contactus.html">聯絡資訊</a>
+                <a href="#">會員登入</a>
+                <a href="order.html">訂購專區</a>
+            </nav>
+        </div>
+        <!-- -------------------------------- -->
+
+    </section>
+
     <!-- 繩結分隔線+麵包屑 -->
     <section id="divider">
         <div class="divider-container">
@@ -68,7 +98,8 @@
             </div>
             <div class="divider-bread row row-cols-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-4">
                 <a href="Images/index/index.html">首頁</a> /
-                <a href="#">訂購專區</a>
+                <a href="order.html">訂購專區</a> /
+                <a href="#">訂購完成</a> 
             </div>
         </div>
     </section>
@@ -100,15 +131,29 @@
             <div class="finish-info container">
                 <div class="row row-cols-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1">
                     <div class="infotext col">
-                        <p>恭喜您訂購完成！</p>
+                        恭喜您訂購完成！
                     </div>
                     <div class="infonum col">
-                        <p>您的訂單編號：<span id="random-num">12345654321</span></p>
-
+                        <p>您的訂單編號：
+                        <span id="random-num"></span></p>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- 訂單亂數 -->
+        <script>
+            let arr=[]
+            for(let i=1;i<=10;i++){
+                arr.push(Math.floor(Math.random()*9)+1)
+            }
+            var arr2=arr.slice(0,10)
+            var data=''
+            for(i=1;i<=10;i++){
+                data+=arr2.pop(i)
+            }
+            document.getElementById("random-num").innerText=`${data}`
+        </script>
+            
         <!-- 更多商品按鈕 -->
         <div class="morebtn">
             <a href="product-list.html">更多商品</a>
@@ -179,7 +224,37 @@
             </div>
         </footer>
     </section>
-
+    <!-- mobile footer -->
+    <section id="mobile-footer">
+        <div class="mobile-footer-body container">
+            <div class="mobile-footer-body-left row row-cols-2 row-cols-md-2">
+                <div class="contact-info">
+                    <img src="Images/address-icon.png" alt="">
+                    <p>桃園市中壢區復興路46號</p>
+                </div>
+                <div class="contact-info">
+                    <img src="Images/tel-icons.png" alt="">
+                    <p>03-4123567</p>
+                </div>
+                <div class="contact-info">
+                    <img src="Images/email-icons.png" alt="">
+                    <p>funeatpastries@gmail.com</p>
+                </div>
+                <div class="contact-icon">
+                    <img src="Images/ig-icons.png" alt="">
+                    <img src="Images/fb-icons.png" alt="">
+                    <img src="Images/line-icons.png" alt="">
+                </div>
+                <p>營業時間：周一至周六 10:00 ~ 19:00</p>
+                <h3>本網站為緯育TibaMe前端工程師班第88期學員專題作品，僅供學習、展示之用無商業用途</h3>
+            </div>
+            <div class="mobile-footer-body-right row row-cols-2 row-cols-md-2">
+                <a href="index.html">
+                    <img src="Images/mobile-footerlogo.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
     </div>
 </body>
 </html>
