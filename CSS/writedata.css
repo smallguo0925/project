@@ -4,3 +4,201 @@
 #mobile-header{
     padding-bottom: 10%;
 }
+
+/* 訂購步驟小圖 */
+.step1 p:first-child{
+    background: url(../Images/order-otherstep.png) no-repeat center;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 1.4rem;
+}
+.step2 p:first-child{
+    background: url(../Images/other-step-ing.png) no-repeat center;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    padding-top: 1.4rem;
+
+}
+.step3 p:first-child{
+    background: url(../Images/other-step-ing.png) no-repeat center;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    padding-top: 1.4rem;
+
+}
+.step4 p:first-child{
+    background: url(../Images/order-otherstep.png) no-repeat center;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    padding-top: 1.4rem;
+
+}
+.order-stepsmallimg{
+    max-width: 800px;
+}
+.stepsmallimg>.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* 資料填寫 */
+#writedata{
+    max-width: 1920px;
+    width: 100%;
+}
+.writedata-body{
+    width: 100%;
+    max-width: 1200px;
+    margin: 5% auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+/* 左邊資料填寫 */
+.ordermenu-left{
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    background-color: #F2ECDE;
+    border-radius: 20px;
+
+}
+.ordermenu-left>div{
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    margin: 0 34px;
+    max-width: 732px;
+    width: 80%;
+}
+.ordermenu-left h3{
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 34px ;
+}
+.ordermenu-left input:not([type="checkbox"]):not([type="radio"]){
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    font-family: FakePearl-Regular;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 270%;
+    border-radius: 20px;
+    background-color: #FFFBF0;
+    margin: 10px 0;
+    padding: 0 10px;
+    
+}
+
+textarea{
+    width: 100%;
+    max-width: 732px;
+    font-family: FakePearl-Regular;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 27px;
+    border-radius: 20px;
+    background-color: #FFFBF0;
+    margin: 10px 0;
+    padding: 10px ;
+    resize: none;
+}
+#sameorder{
+    font-size: 20px;
+}
+#delivery{
+    width: 104%;
+    font-family: FakePearl-Regular;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 270%;
+    border-radius: 20px;
+    background-color: #FFFBF0;
+    margin: 10px 20px 10px 0;
+    padding:10px;
+}
+.safenum-date{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 34px;
+}
+.safenum>input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.safenum + .data{
+    width: 100%;
+    max-width: 366px;
+}
+/* 右邊總計 */
+.ordermenu{
+    width: 100%;
+    margin-left: 34px;
+    max-width: 366px;
+    background-color: #F2ECDE;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 90px;
+    height: 50%;
+}
+.ordermenu>div{
+    margin: 34px 34px 17px 34px;
+}
+.ordermenu-title h3{
+    font-size: 36px;
+}
+.ordermenu-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ordermenu-discount{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.ordermenu-total::after{
+    content: '';
+    border: 1px solid #000;
+    position: absolute;
+    bottom: 37%;
+    left: 10%;
+    width: 100%;
+    max-width: 300px;
+}
+
+.ordermenu-total{
+    text-align: right;
+}
+.ordermenu-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.ordermenu-btn a{
+    border-radius: 50px;
+    background-color: #DBC5AE;
+    padding: 1em 2em;
+    text-decoration: none;
+    color: #000;
+}
+.ordermenu-btn a:hover{
+    background-color: #E6CAA2;
+    color: #FFF;
+}
+

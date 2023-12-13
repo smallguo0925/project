@@ -11,6 +11,7 @@ html{
     background-color: #FFFBF0;
     font-weight: 400;
     scroll-behavior: smooth;
+
     
 }
 /* 網頁捲軸【寬度】 */
@@ -37,7 +38,7 @@ html{
 	color: #fff;
 }
 /* 導覽列 */
-header ul{
+header>ul{
     display: flex;
     position: fixed;
     background-color: #9D2933; 
@@ -87,7 +88,6 @@ header ul{
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
-    
 }
 
 .mobile-logo {
@@ -106,7 +106,6 @@ header ul{
     flex-direction: column;
     justify-content: center;
     padding: 10px;
-    
 }
 .hb span {
     width: 80%;
@@ -131,6 +130,7 @@ header ul{
     text-decoration: none;
     color: #fff;
     text-align: center;
+    font-size: 16px;
 }
 .main-nav a + a {
     border-top: 1px solid #fff;
