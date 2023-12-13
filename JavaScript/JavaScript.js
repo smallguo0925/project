@@ -86,25 +86,17 @@ window.addEventListener( "load" , function (){
         e.preventDefault(); 
         return;
     }
-
-    //檢查性別一定要選(name:sex)
-    let sexes = document.getElementsByName("sex");
-    if(sexes[0].checked === false && !sexes[1].checked) { //sexes[1].checked === false可以改寫成 !sexes[1].checked
-        alert("性別一定要選");
-        //阻止預設行為
-        e.preventDefault(); 
-        return;
-    }
-
-    //檢查消息來源一定要選(id:info)
-    let info = $("info");
-    if(info.selectedIndex === 0) {
-        alert("消息來源一定要選");
+    //檢查配送方式一定要選
+    let delivery = $("delivery");
+    if(delivery.selectedIndex === 0) {
+        alert("配送方式一定要選");
         //阻止預設行為
         e.preventDefault(); 
         return;
     }
     }
+  //檢查付款方式一定要選
+
 
     window.addEventListener( "load" , function (){
     //------myForm被送出時執行checkForm

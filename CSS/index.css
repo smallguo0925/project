@@ -238,18 +238,13 @@
 .DIY-body-footer a:hover{
     background-color: #E6CAA2;
 }
-/* .DIY-mobilebody{
+.DIY-mobilebody{
     display: none;
     max-width: 768px;
     width: 100%;
     padding: 50% 0;
 
 }
-
-
- */
-
-
 @media (max-width: 768px) {
     .DIY-mobilebody{
         display: flex;
