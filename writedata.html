@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="CSS/grid.css">
     <link rel="stylesheet" href="CSS/element.css">
     <link rel="stylesheet" href="CSS/writedata.css">
-    <script src="JavaScript/JavaScript.js"></script>
     <link rel="icon" href="Images/icon-logo.png" type="Images/icon-logo.png">
 
 </head>
@@ -128,24 +127,24 @@
             <!-- 左邊資料 -->
             <div class="ordermenu-left">
                 <div class="orderman" id="orderman">
-                    <h3>訂購人資訊</h3>
+                    <h3>訂購人資訊<span>*必填</span></h3>
                     <div class="orderman-name" >
-                        <label for="orderman-name"><p>姓名：</p></label>
+                        <label for="orderman-name"><p>*姓名：</p></label>
                         <input type="text" placeholder="請輸入您的姓名" id="orderman-name">
                 
                     </div>
                     <div class="orderman-email">
                         <label for="orderman-email">
-                            <p>電子郵件：</p>
+                            <p>*電子郵件：</p>
                         </label>
                             <input type="email" placeholder="請輸入您的電子郵件" id="orderman-email">
                 
                     </div>
                     <div class="orderman-tel">
                         <label for="orderman-tel">
-                            <p>聯絡電話：</p>
+                            <p>*聯絡手機：</p>
                         </label>
-                            <input type="tel" placeholder="請輸入您的連絡電話" id="orderman-tel">
+                            <input type="tel" placeholder="請輸入您的連絡手機" id="orderman-tel">
                 
                     </div>
                     <div class="orderman-discount" >
@@ -167,29 +166,35 @@
                     </div>
                 </div>
                 <div class="recipient" id="recipient">
-                    <h3>收件人資訊<input type="checkbox" name="" id="sameorderman"><span id="sameorder">同訂購人</span></h3>
+                    <h3>收件人資訊
+                        <input type="checkbox" name="" id="sameorderman">
+                            <label for="sameorderman"><span id="sameorder">
+                            同訂購人
+                            </span></label>
+                            
+                    </h3>
                     <div class="recipient-name">
                         <label for="recipient-name">
-                            <p>姓名：</p>
+                            <p>*姓名：</p>
                         </label>
                         <input type="text" placeholder="請輸入您的姓名" id="recipient-name">
                     </div>
                     <div class="recipient-email">
                         <label for="recipient-email">
-                            <p>電子郵件：</p>
+                            <p>*電子郵件：</p>
                         </label>
                         <input type="email" placeholder="請輸入您的電子郵件" id="recipient-email">
                         </label>
                     </div>
                     <div class="recipient-tel">
                         <label for="recipient-tel">
-                            <p>聯絡電話：</p>
+                            <p>*聯絡手機：</p>
                         </label>
-                        <input type="tel" placeholder="請輸入您的連絡電話" id="recipient-tel">
+                        <input type="tel" placeholder="請輸入您的連絡手機" id="recipient-tel">
                         </label>
                     </div>
                     <div class="delivery-method" id="delivery-method">
-                        <p>配送方式：</p>
+                        <p>*配送方式：</p>
                         <select name="" id="delivery">
                             <option value="nonechoice">請選擇</option>
                             <option value="超商取貨">超商取貨</option>
@@ -197,7 +202,7 @@
                             <option value="實體門市取件">實體門市取件</option>
                         </select>
                     </div>
-                    <div class="delivery-address">
+                    <div class="delivery-address" id="deliveryaddress">
                         <label for="delivery-address">
                             <p>配送地址：</p>
                         </label>
@@ -207,21 +212,29 @@
                 </div>
                 <div class="payment">
                     <div class="payment-title">
-                        <h3>選擇付款方式</h3>
+                        <h3>*選擇付款方式</h3>
                     </div>
                     <div class="payment-method">
                         <form id="payment">
-                            <input type="radio" id="pay-on-delivery" name="payment-method" value="pay-on-delivery">
-                            <label for="pay-on-delivery">貨到付款</label>
+                            <div class="pay-on-delivery">
+                                <input type="radio" id="pay-on-delivery" name="payment-method" value="pay-on-delivery">
+                                <label for="pay-on-delivery">貨到付款</label>
+                            </div>
 
-                            <input type="radio" id="supermarket-payment" name="payment-method" value="supermarket-payment">
-                            <label for="supermarket-payment">超商付款</label>
+                            <div class="supermarket-payment">
+                                <input type="radio" id="supermarket-payment" name="payment-method" value="supermarket-payment">
+                                <label for="supermarket-payment">超商付款</label>
+                            </div>
 
-                            <input type="radio" id="creditcard-payment" name="payment-method" value="creditcard-payment">
-                            <label for="creditcard-payment">信用卡付款</label>
+                            <div class="creditcard-payment">
+                                <input type="radio" id="creditcard-payment" name="payment-method" value="creditcard-payment">
+                                <label for="creditcard-payment">信用卡付款</label>
+                            </div>
 
-                            <input type="radio" id="pay-online" name="payment-method" value="pay-online">
-                            <label for="pay-online">電子支付</label>
+                            <div class="pay-online">
+                                <input type="radio" id="pay-online" name="payment-method" value="pay-online">
+                                <label for="pay-online">電子支付</label>
+                            </div>
                         </form>
                     </div>
                     <div class="creditcard">
@@ -265,9 +278,10 @@
                 </div>
                 
                 <div class="ordermenu-btn">
-                    <a href="order-finish.html">
-                        送出訂單
-                    </a>
+                    <form id="myForm" action="order-finish.html">
+                        <input type="submit" value="送出訂單">
+                    </form>
+                    
                 </div>
             </div>
         </div>
@@ -370,6 +384,7 @@
             </div>
         </div>
     </section>
+    <script src="JavaScript/JavaScript.js"></script>
 
 </body>
 </html>

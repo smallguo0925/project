@@ -84,6 +84,11 @@
     font-weight: 500;
     margin-top: 34px ;
 }
+.ordermenu-left h3>span{
+    font-size: 20px;
+    color: #9D2933;
+}
+
 .ordermenu-left input:not([type="checkbox"]):not([type="radio"]){
     display: flex;
     flex-wrap: wrap;
@@ -147,12 +152,20 @@ input[type=number]::-webkit-inner-spin-button {
 .creditcard{
     display: none;
 }
-
+#payment{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+}
+#payment>input[type=radio]{
+    margin: 0 0 0 10px;
+}
 /* 右邊總計 */
 .ordermenu{
     width: 100%;
-    margin-left: 34px;
-    max-width: 366px;
+    margin:0 auto;
+    max-width: 332px;
     background-color: #F2ECDE;
     border-radius: 20px;
     display: flex;
@@ -161,6 +174,12 @@ input[type=number]::-webkit-inner-spin-button {
     top: 90px;
     height: 50%;
 }
+@media (max-width:768px) {
+    .ordermenu{
+        position: none;
+        margin: 34px auto;
+    }
+    }
 .ordermenu>div{
     margin: 34px 34px 17px 34px;
 }
@@ -185,7 +204,7 @@ input[type=number]::-webkit-inner-spin-button {
     bottom: 37%;
     left: 10%;
     width: 100%;
-    max-width: 300px;
+    max-width: 270px;
 }
 
 .ordermenu-total{
@@ -197,14 +216,20 @@ input[type=number]::-webkit-inner-spin-button {
     align-items: center;
     text-align: center;
 }
-.ordermenu-btn a{
+#myForm>input[type=submit] {
     border-radius: 50px;
     background-color: #DBC5AE;
     padding: 1em 2em;
     text-decoration: none;
     color: #000;
+    border: none;
+    font-family: FakePearl-Regular;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 27px;
+    cursor: pointer;
 }
-.ordermenu-btn a:hover{
+#myForm>input[type=submit]:hover{
     background-color: #E6CAA2;
     color: #FFF;
 }
