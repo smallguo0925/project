@@ -120,8 +120,6 @@
 }
 /* 地圖 */
 .contactus-map{
-    display: flex;
-    justify-content: center;
     margin: 34px;
 }
 .contactus-map-border{

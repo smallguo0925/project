@@ -11,7 +11,7 @@ html{
     background-color: #FFFBF0;
     font-weight: 400;
     scroll-behavior: smooth;
-
+    overflow-x: hidden;
     
 }
 /* 網頁捲軸【寬度】 */
