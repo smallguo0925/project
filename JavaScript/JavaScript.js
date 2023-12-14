@@ -94,10 +94,17 @@ window.addEventListener( "load" , function (){
         e.preventDefault(); 
         return;
     }
-    }
-  //檢查付款方式一定要選
-
-
+    //檢查付款方式一定要選
+    let payments = document.getElementsByName("payment-method");
+    
+        if(payments[0].checked === false && !payments[1].checked && !payments[2].checked && !payments[3].checked){
+            alert("付款方式一定要選");
+        //阻止預設行為
+        e.preventDefault(); 
+        return;
+        }
+    
+}
     window.addEventListener( "load" , function (){
     //------myForm被送出時執行checkForm
     $("myForm").onsubmit = checkForm
