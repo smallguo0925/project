@@ -120,7 +120,9 @@
 }
 /* 地圖 */
 .contactus-map{
-    margin: 34px;
+    margin: 34px auto;
+    max-width: 1200px;
+    width: 100%;
 }
 .contactus-map-border{
     border: 1px solid #E3D8C6;
@@ -133,9 +135,9 @@
     background-color: #fffbf0;
     position: relative;
 }
-.contactus-mapbox>.col>iframe{
+.contactus-map-border>.iframe{
     width: 100%;
-    padding-bottom: 75%;
+    height: 100vh;
     position: absolute;
     border-radius: 20px;
 }
@@ -149,7 +151,7 @@
     
     .contactus-mapbox iframe{
         width: 100%;
-        height: 100%;
+        padding-bottom: 75%;
         position: absolute;
         border-radius: 20px;
     }
