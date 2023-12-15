@@ -60,13 +60,20 @@ window.addEventListener( "load" , function (){
     function checkForm(e){ //??????, 接收事件物件的參考
     //檢查訂購人姓名是否有填寫
     let ordername = $("orderman-name");
-    if(ordername.value.length == 0) {
-        alert("訂購人姓名為必填");
-        ordername.focus();
-        //阻止預設行為
-        e.preventDefault();  //阻止的同時也讓彈出視窗關閉之後鼠標回到盒子裡
-        return;
+    let has123 = false
+    for (let i=0;i<ordername.value.length;i++){
+        let char=ordername.value.charAt(i).toLowerCase();
+        if(ordername.value.length === 0 || ('0' <= char && char <= '9')) {
+            has123=true;
+            $("orderman-name").style.borderColor='red';
+            alert("訂購人姓名為必填或內包含數字，請修改");
+            ordername.focus();
+            //阻止預設行為
+            e.preventDefault();  //阻止的同時也讓彈出視窗關閉之後鼠標回到盒子裡
+            return;
+        }
     }
+
 
     //檢查訂購人信箱是否有填寫
     let orderemail = $("orderman-email");
@@ -109,3 +116,38 @@ window.addEventListener( "load" , function (){
     //------myForm被送出時執行checkForm
     $("myForm").onsubmit = checkForm
     });
+
+//element-會員登入燈箱
+function $(id){
+    return document.getElementById(id);
+} 
+    // 顯示燈箱
+    function showLoginLightbox() {
+        $("loginbox").style.display = "block";
+        console.log("Clicked");
+    }
+    
+    // 隱藏燈箱
+    function closeLoginLightbox() {
+        $("loginbox").style.display = "none";
+    }
+    
+    // 提交登入表單的處理函式
+    function submitLoginForm() {
+        // 在這裡添加處理登入的邏輯
+        // 例如，檢查使用者名稱和密碼是否正確
+        // 如果正確，可以執行其他相關操作，然後關閉燈箱
+        // 如果不正確，可以顯示錯誤訊息
+        closeLoginLightbox();
+    }
+    window.addEventListener('click', function(e) {
+        var loginLightbox = $('memlogin');
+        if (e.target === loginLightbox) {
+        closeLoginLightbox();
+        }
+    });
+    $("login").onclick=showLoginLightbox;
+
+        
+
+   

@@ -77,21 +77,37 @@
     max-width: 1920px;
     width: 100%;
     white-space: nowrap;
-    animation: marquee 20s linear infinite;
+    animation: marquee 20s linear infinite ;
 }
 @keyframes marquee {
     0% {
-        transform: translateX(100%);
+        transform: translateX(300%);
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-300%);
     }
 }
 @media (max-width:768px) {
-    #marquee{
+    .marquee-content:not(:first-child){
         display: none;
     }
+    .marquee-content {
+        display: inline-block;
+        max-width: 1920px;
+        width: 100%;
+        white-space: nowrap;
+        animation: marquee 15s linear infinite ;
     }
+    
+    @keyframes marquee {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-200%);
+        }
+    }
+}
 /* 熱銷商品 */
 .hotproducts img{
     width: 100%;

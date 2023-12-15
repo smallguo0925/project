@@ -14,6 +14,13 @@ html{
     overflow-x: hidden;
     
 }
+/* #header{
+    padding-bottom: 15%;
+}
+#mobile-header{
+    padding-bottom: 10%;
+} */
+
 /* 網頁捲軸【寬度】 */
 ::-webkit-scrollbar {
     width: 30px;
@@ -76,6 +83,9 @@ header>ul{
 .nav-li a:hover:not(#nav-logo){
     background-color: #C3272B;
 }
+
+
+
 /* 手機板導覽列 */
 #mobile-header{
     display: none;
@@ -144,6 +154,139 @@ header>ul{
         display: block;
     }
 }
+/* 會員登入燈箱 */
+#memlogin{
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+}
+.loginbox{
+    margin:  10% auto;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 20px;
+    border: #DBC5AE 2px solid;
+    display: none;
+    background-color: #FFFBF0;
+
+}
+.loginbox>h2{
+    font-size: 36px;
+    margin: 34px;
+    text-align: center;
+}
+#loginForm{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+}
+#loginForm>[type="text"],#loginForm>[type="password"]{
+    width: 100%;
+    max-width: 332px;
+    margin: 0 auto;
+    font-size: 20px;
+    border-radius: 20px;
+    border: #DBC5AE 2px solid;
+    font-family: FakePearl-Regular;
+    padding: 0 10px;
+    letter-spacing: 2px;
+    line-height: 270%;
+    background-color: #FFFBF0;
+    font-weight: 400;
+}
+.verification-code{
+    width: 100%;
+    max-width: 332px;
+    margin: 0 21px;
+
+}
+.verification-code>[type="text"]{
+    width: 100%;
+    max-width: 166px;
+    margin: 0 auto;
+    font-size: 20px;
+    border-radius: 20px;
+    border: #DBC5AE 2px solid;
+    font-family: FakePearl-Regular;
+    padding: 0 10px;
+    letter-spacing: 2px;
+    line-height: 270%;
+    background-color: #FFFBF0;
+    font-weight: 400;
+}
+.register-forgot{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 332px;
+    margin: 0 auto;
+}
+.register-forgot a{
+    text-decoration: none;
+    color: #000;
+    &:hover{
+        color: #DBC5AE;
+    }
+}
+#loginbtn{
+    width: 100%;
+    max-width: 356px;
+    margin: 10px auto;
+    font-size: 20px;
+    border-radius: 20px;
+    border: #DBC5AE 2px solid;
+    font-family: FakePearl-Regular;
+    padding: 0 10px;
+    letter-spacing: 2px;
+    line-height: 270%;
+    background-color: #DBC5AE;
+    font-weight: 400;
+    cursor: pointer;
+    &:hover{
+        background-color: #E6CAA2;
+        color: #fff;
+    }
+}
+#loginrope{
+    width: 100%;
+    max-width: 380px;
+    margin: 10px;
+    vertical-align: top;
+}
+.loginbox p{
+    text-align: center;
+    margin: 10px 0;
+}
+.formclose{
+    width: 32px;
+    text-align: center;
+    padding: 10px;
+    font-size: 32px;
+    border-radius: 50%;
+    background-color: #DBC5AE;
+    color: #FFFBF0;
+    position: absolute;
+    right: 40%;
+    bottom: 74%;
+    cursor: pointer;
+}
+.quicklogin{
+    margin:20px auto;
+    width: 100%;
+    max-width: 356px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 68px;
+}
+.quicklogin img{
+    width: 100%;
+    vertical-align: top;
+}
+
+
 
 /* 繩結分隔線+麵包屑 */
 
