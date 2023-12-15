@@ -26,6 +26,10 @@ function $(id){
         if (e.target === loginLightbox) {
         closeLoginLightbox();
         }
+        var formclosebtn =$('formclose');
+        if (e.target === formclosebtn) {
+            closeLoginLightbox();
+            }
     });
     $("login").onclick=showLoginLightbox;
 
