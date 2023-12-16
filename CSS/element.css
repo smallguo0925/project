@@ -287,6 +287,10 @@ header>ul{
     width: 100%;
     vertical-align: top;
 }
+#verify-code{
+    width: 100%;
+    max-width: 120px;
+}
 /* 手機板會員登入 */
 @media (max-width:768px) {
     .formclose{

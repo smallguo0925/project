@@ -97,7 +97,9 @@
                     <input type="password" id="password" name="password" required placeholder="請輸入密碼">
                     <div class="verification-code">
                         <input type="text" id="verification-code" required placeholder="請輸入驗證碼">
-                        <span id="veri-code">驗證碼</span>
+                        <a href="javascript:void();" id="refresh-code">
+                            <canvas id="verify-code" width="150" height="45"></canvas>
+                            </a>
                     </div>
                     <div class="register-forgot">
                         <div class="register">
