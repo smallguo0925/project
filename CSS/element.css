@@ -285,8 +285,13 @@ header>ul{
     width: 100%;
     vertical-align: top;
 }
-
-
+/* 手機板會員登入 */
+@media (max-width:768px) {
+    .formclose{
+    display: none;    
+}
+    
+}
 
 /* 繩結分隔線+麵包屑 */
 

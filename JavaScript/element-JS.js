@@ -28,6 +28,7 @@ function $(id){
         }
     });
     $("login").onclick=showLoginLightbox;
+    $('mobilelogin').onclick=showLoginLightbox;
 
         
 
