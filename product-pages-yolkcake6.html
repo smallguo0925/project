@@ -43,7 +43,7 @@
                         聯絡資訊
                     </a>
                 </li>
-                <li class="nav-li">
+                <li class="nav-li" id="login">
                     <a href="#">
                         會員登入
                     </a>
@@ -78,12 +78,50 @@
                 <a href="news.html">最新消息</a>
                 <a href="product-list.html">產品介紹</a>
                 <a href="contactus.html">聯絡資訊</a>
-                <a href="#">會員登入</a>
+                <a href="#" id="mobilelogin">會員登入</a>
                 <a href="order.html">訂購專區</a>
             </nav>
         </div>
         <!-- -------------------------------- -->
 
+    </section>
+    <!-- 會員登入燈箱 -->
+    <section id="memlogin">
+        <div class="loginbox" id="loginbox">
+            <h2>會員登入</h2>
+            <form id="loginForm">
+                <!-- 登入表單元素放在這裡 -->
+                <input type="text" id="username" name="username" placeholder="請輸入帳號" required>
+                <input type="password" id="password" name="password" required placeholder="請輸入密碼">
+                <div class="verification-code">
+                    <input type="text" id="verification-code" required placeholder="請輸入驗證碼">
+                    <span id="veri-code">驗證碼</span>
+                </div>
+                <div class="register-forgot">
+                    <div class="register">
+                        <a href="#">註冊帳號</a>
+                    </div>
+                    <div class="forgot">
+                        <a href="#">忘記密碼</a>
+                    </div>
+                </div>
+                <input type="submit" id="loginbtn" value="登入">
+            </form>
+            <div class="formclose" id="formclose">X</div>
+            <img src="Images/rope.png" alt="繩結分隔線" id="loginrope">
+            <p>快速登入</p>
+            <div class="quicklogin">
+                <a href="#">
+                        <img src="Images/login-google.svg" alt="login-google登入">
+                </a>
+                <a href="#">
+                        <img src="Images/login-line.svg" alt="login-line登入">
+                </a>
+                <a href="#">
+                        <img src="Images/login-fb.svg" alt="login-fb登入">
+                </a>
+            </div>
+        </div>
     </section>
 
     <!-- 繩結分隔線+麵包屑 -->
@@ -110,11 +148,21 @@
         <div class="product-pages-body container">
             <div class="product-content row row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2">
                 <div class="col productimg">
-                    <img src="Images/product-page-yolkcake.png" alt="相思團圓蛋黃酥6入">
+                    <ul>
+                        <li>
+                            <img src="Images/product-page-yolkcake.png" alt="相思團圓蛋黃酥6入" id="large">
+                        </li>
+                        <!-- <li>
+                            <img src="Images/productpage-yolk-StoL1.svg" alt="相思團圓蛋黃酥6入" id="large">
+                        </li>
+                        <li>
+                            <img src="Images/productpage-yolk-StoL2.svg" alt="相思團圓蛋黃酥6入" id="large">
+                        </li> -->
+                    </ul>
                 </div>
                 <div class="producttext col ">
                     <div class="favorite-icon">
-                        <img src="Images/product-page-favorite.png" alt="加入收藏">
+                        <img src="Images/product-page-favorite.png" alt="加入收藏" id="addfavorite" title="加入收藏">
                     </div>
                     <div class="producttext-title">
                         <h2>相思團圓蛋黃酥6入</h2>
@@ -130,14 +178,14 @@
                     <div class="producttext-footer">
                         <!-- +-按鈕 -->
                         <div class="number">
-                            <span class="minus">-
+                            <span class="minus" id="minus">-
                             </span>
                             <input type="text" value="1" id="numberbox">
-                            <span class="plus">+
+                            <span class="plus" id="plus">+
                             </span>
                         </div>
                         <!-- 加入購物車 -->
-                        <input type="button" value="加入購物車" id="addcart">
+                        <a href="order.html" id="addcart">加入購物車</a>
                     </div>
                 </div>
             </div>
@@ -150,11 +198,14 @@
         <div class="product-pages-simage-content container">
             <div class="row">
                 <div class="smallimg col">
-                    <img src="Images/product-page-small1.png" alt="相思團圓蛋黃酥小圖一">
+                    <img src="Images/productpage-yolk-StoL1.svg" alt="相思團圓蛋黃酥小圖一" id="small">
                 </div>
                 <div class="smallimg col">
-                    <img src="Images/product-page-small2.png" alt="相思團圓蛋黃酥小圖二">
-                </div>
+                    <img src="Images/productpage-yolk-StoL2.svg" alt="相思團圓蛋黃酥小圖二" id="small">
+                </div>              
+                <div class="smallimg col">
+                    <img src="Images/product-page-yolkcake.png" alt="相思團圓蛋黃酥小圖三" id="small">
+                </div>              
             </div>
 
         </div>
@@ -310,7 +361,9 @@
         </div>
     </div>
 </section>
-
+<script src="JavaScript/jquery-3.7.1.js"></script>
+<script src="JavaScript/element-JS.js"></script>
+<script src="JavaScript/product-page.js"></script>
 </body>
 
 </html>

@@ -70,6 +70,9 @@
     }
     
 }
+.productimg>ul>li:not(:first-child){
+    display: none;
+}
 #addcart:hover{
     background-color: #E6CAA2;
     color: #fff;
@@ -82,6 +85,8 @@
     background-color: #DBC5AE;
     font-size: 20px;
     font-family: FakePearl-Regular;
+    text-decoration: none;
+    color: #000;
 }
 .number {
     display: flex;
@@ -137,6 +142,8 @@
     top: 2%;
 }
 
+
+
 /* 小圖 */
 .product-pages-simage-content{
     padding-top: 1%;
@@ -144,6 +151,8 @@
 .smallimg{
     cursor: pointer;
     margin-left: 1%;
+    width: 100%;
+    max-width: 150px;
 }
 .smallimg img{
     width: 100%;
