@@ -13,14 +13,6 @@ function $(id){
         $("loginbox").style.display = "none";
     }
     
-    // 提交登入表單的處理函式
-    function submitLoginForm() {
-        // 在這裡添加處理登入的邏輯
-        // 例如，檢查使用者名稱和密碼是否正確
-        // 如果正確，可以執行其他相關操作，然後關閉燈箱
-        // 如果不正確，可以顯示錯誤訊息
-        closeLoginLightbox();
-    }
     window.addEventListener('click', function(e) {
         var loginLightbox = $('memlogin');
         if (e.target === loginLightbox) {

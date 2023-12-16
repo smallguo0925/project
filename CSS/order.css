@@ -132,7 +132,7 @@
 .minus:hover, .plus:hover{
     background-color: #DBC5AE;
 }
-#numberbox{
+#numberbox,#numberbox1{
     height: 46px;
     width: 100px;
     text-align: center;

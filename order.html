@@ -43,7 +43,7 @@
                         聯絡資訊
                     </a>
                 </li>
-                <li class="nav-li">
+                <li class="nav-li" id="login">
                     <a href="#">
                         會員登入
                     </a>
@@ -78,14 +78,51 @@
                     <a href="news.html">最新消息</a>
                     <a href="product-list.html">產品介紹</a>
                     <a href="contactus.html">聯絡資訊</a>
-                    <a href="#">會員登入</a>
+                    <a href="#" id="mobilelogin">會員登入</a>
                     <a href="order.html">訂購專區</a>
                 </nav>
             </div>
             <!-- -------------------------------- -->
     
         </section>
-    
+    <!-- 會員登入燈箱 -->
+    <section id="memlogin">
+        <div class="loginbox" id="loginbox">
+            <h2>會員登入</h2>
+            <form id="loginForm">
+                <!-- 登入表單元素放在這裡 -->
+                <input type="text" id="username" name="username" placeholder="請輸入帳號" required>
+                <input type="password" id="password" name="password" required placeholder="請輸入密碼">
+                <div class="verification-code">
+                    <input type="text" id="verification-code" required placeholder="請輸入驗證碼">
+                    <span id="veri-code">驗證碼</span>
+                </div>
+                <div class="register-forgot">
+                    <div class="register">
+                        <a href="#">註冊帳號</a>
+                    </div>
+                    <div class="forgot">
+                        <a href="#">忘記密碼</a>
+                    </div>
+                </div>
+                <input type="submit" id="loginbtn" value="登入">
+            </form>
+            <div class="formclose" id="formclose">X</div>
+            <img src="Images/rope.png" alt="繩結分隔線" id="loginrope">
+            <p>快速登入</p>
+            <div class="quicklogin">
+                <a href="#">
+                        <img src="Images/login-google.svg" alt="login-google登入">
+                </a>
+                <a href="#">
+                        <img src="Images/login-line.svg" alt="login-line登入">
+                </a>
+                <a href="#">
+                        <img src="Images/login-fb.svg" alt="login-fb登入">
+                </a>
+            </div>
+        </div>
+    </section>
     <!-- 繩結分隔線+麵包屑 -->
     <section id="divider">
         <div class="divider-container">
@@ -133,32 +170,35 @@
                         商品
                     </div>
                     <div class="content-amount col">
-                        規格/數量
+                        規格/價格/數量
                     </div>
                     <div class="total col">
                         小計
                     </div>
                 </div>
-                <div class="content-body row row-cols-1 row-cols-md-1 row-cols-lg-3 row-cols-xl-3">
+                <div class="content-body row row-cols-1 row-cols-md-1 row-cols-lg-3 row-cols-xl-3" id="row1">
                     <div class="content-product col">
                         <img src="Images/oreder-product-pineapple.png" alt="鳳梨椰香月餅10入">
                     </div>
                     <div class="content-amount col">
                         <p>鳳梨椰香月餅10入</p>
+                        <div class="product-price">
+                            NT$<span id="product-price" data-product="product-price">600</span>
+                        </div>
                         <div class="number">
                             <span class="minus">-
                             </span>
-                            <input type="text" value="1" id="numberbox">
+                            <input type="text" value="1" id="numberbox" class="numberbox" data-product="numberbox">
                             <span class="plus">+
                             </span>
                         </div>
                     </div>
                     <div class="total col">
                         <div class="price">
-                            NT$<span>600</span>
+                            NT$<span id="price"></span>
                         </div>
                         <div class="delete">
-                            <input type="image" src="Images/icons-delete.png" alt="刪除">
+                            <input type="image" src="Images/icons-delete.png" alt="刪除" id="del">
                         </div>
                     </div>
                 </div>
@@ -168,20 +208,23 @@
                     </div>
                     <div class="content-amount col">
                         <p>翡翠金絲豆沙糕10入</p>
+                        <div class="product-price">
+                            NT$<span id="product-price1" data-product="product-price1">500</span>
+                        </div>
                         <div class="number">
                             <span class="minus">-
                             </span>
-                            <input type="text" value="1" id="numberbox">
+                            <input type="text" value="1" id="numberbox1" class="numberbox" data-product="numberbox">
                             <span class="plus">+
                             </span>
                         </div>
                     </div>
                     <div class="total col">
                         <div class="price">
-                            NT$<span>1,000</span>
+                            NT$<span id="price1"></span>
                         </div>
                         <div class="delete">
-                            <input type="image" src="Images/icons-delete.png" alt="刪除">
+                            <input type="image" src="Images/icons-delete.png" alt="刪除" id="del">
                         </div>
                     </div>
                 </div>
@@ -193,7 +236,7 @@
                     </div>
                     <div class="total col">
                         <div class="price">
-                            NT$<span>1,600</span>
+                            NT$<span id="total-price"></span>
                         </div>
                     </div>
                     
@@ -318,5 +361,7 @@
         </div>
     </section>
     </div>
+    <script src="JavaScript/element-JS.js"></script>
+    <script src="JavaScript/order.js"></script>
 </body>
 </html>
