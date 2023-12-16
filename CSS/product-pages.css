@@ -70,7 +70,7 @@
     }
     
 }
-.productimg>ul>li:not(:first-child){
+.mobile_LtoR{
     display: none;
 }
 #addcart:hover{
@@ -141,9 +141,20 @@
     right: 2%;
     top: 2%;
 }
-
-
-
+@media (max-width:768px) {
+    .mobile_LtoR{
+        width: 100%;
+        max-width: 400px;
+        display: flex;
+        justify-content: center;
+    }
+    .mobile_LtoR img{
+        width: 90%;
+        max-width: 120px;
+        border-radius: 20px;
+        margin: 10px 0;
+    }
+}
 /* 小圖 */
 .product-pages-simage-content{
     padding-top: 1%;

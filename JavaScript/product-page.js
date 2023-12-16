@@ -36,7 +36,7 @@ function addfavorite(){
 }
 $('addfavorite').onclick=addfavorite;
 
-//點小圖秀大圖
+//點小圖秀大圖(桌機)
 
 function showLarge(e){//e代表事件物件
     let small=e.target; //event.target 屬性是永遠指向觸發事件的 DOM 物件
@@ -53,5 +53,20 @@ function select(){
 document.getElementById("small").onclick = showLarge
 window.addEventListener("load", select, false);
 
-//大圖在手機板上輪播
+
+//點小圖秀大圖(手機)
+function showLarge(e){//e代表事件物件
+    let small=e.target; //event.target 屬性是永遠指向觸發事件的 DOM 物件
+    document.getElementById("large").src=small.src
+}
+    
+function choice(){
+    let smalls=document.querySelectorAll(".mobile_LtoR img")
+    for(let i=0;i<smalls.length;i++){
+        smalls[i].onclick = showLarge
+    }
+}
+    
+document.getElementById("small").onclick = showLarge
+window.addEventListener("load", choice, false);
 
