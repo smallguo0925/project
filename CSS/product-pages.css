@@ -230,7 +230,10 @@
     }
     
 }
-
+/* 其他推薦商品繩結 */
+#divider{
+    margin: 30px auto;
+}
 /* 其他推薦商品內容 */
 .others{
     margin: 34px 0 ;
