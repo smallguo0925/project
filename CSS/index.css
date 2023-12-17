@@ -422,7 +422,7 @@
         background: url(../Images/mobile-flour.svg) no-repeat left top /80%;
         position: absolute;
         top: 20%;
-        left: 13%;
+        left: 0%;
         width: 100px;
         height: 100px;
     }
@@ -430,7 +430,7 @@
         background: url(../Images/mobile-rolling.svg) no-repeat left top /100%;
         position: absolute;
         top:46%;
-        left: 11%;
+        left: 0%;
         width: 100px;
         height: 100px;
     
@@ -439,7 +439,7 @@
         background: url(../Images/mobile-yolk.svg) no-repeat left top /80%;
         position: absolute;
         bottom: 23%;
-        left: 13%;
+        left: 0%;
         width: 100px;
         height: 100px;
         }
@@ -447,7 +447,7 @@
         background: url(../Images/mobile-oven.svg) no-repeat left top /80%;
         position: absolute;
         bottom: -2%;
-        left: 12%;
+        left: 0%;
         width: 100px;
         height: 100px;
         }
