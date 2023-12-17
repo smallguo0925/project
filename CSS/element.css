@@ -295,7 +295,37 @@ header>ul{
 @media (max-width:768px) {
     .formclose{
     display: none;    
-}
+    }
+    .loginbox{
+        margin:  10% auto;
+        max-width: 350px;
+        width: 100%;
+        border-radius: 20px;
+        border: #DBC5AE 2px solid;
+        background-color: #FFFBF0;
+        display: none;
+    }
+    #loginForm>[type="text"],#loginForm>[type="password"]{
+        max-width: 280px;
+        margin: 0 20px;
+    }
+    .register-forgot{
+        max-width: 280px;
+        margin: 0 24px;
+    }
+    #loginbtn{
+        width: 100%;
+        max-width: 280px;
+        margin: 10px 35px;
+    }
+    #loginrope{
+        width: 100%;
+        max-width: 280px;
+        margin: 10px 35px;
+        vertical-align: top;
+    }
+    
+    
     
 }
 

@@ -33,6 +33,30 @@ function $(id){
     });
     $("login").onclick=showLoginLightbox;
 //-----------------------------------------------
+//手機會員登入
+function m_showLoginLightbox() {
+    $("loginbox").style.display = "block";
+    console.log("Clicked");
+}
+
+// 隱藏燈箱
+function m_closeLoginLightbox() {
+    $("loginbox").style.display = "none";
+}
+
+// 提交登入表單的處理函式
+window.addEventListener('click', function(e) {
+    var loginLightbox = $('memlogin');
+    if (e.target === loginLightbox) {
+    closeLoginLightbox();
+    }
+    var formclosebtn =$('formclose');
+    if (e.target === formclosebtn) {
+        closeLoginLightbox();
+        }
+});
+$("mobilelogin").onclick=m_showLoginLightbox;
+
 //點我填寫聯絡表單
     // 顯示燈箱
     function showwrite() {
