@@ -170,7 +170,7 @@ header>ul{
     border: #DBC5AE 2px solid;
     display: none;
     background-color: #FFFBF0;
-
+    position: relative;
 }
 .loginbox>h2{
     font-size: 36px;
@@ -182,7 +182,6 @@ header>ul{
     flex-direction: column;
     flex-wrap: wrap;
     gap: 20px;
-    position: relative;
 }
 #loginForm>[type="text"],#loginForm>[type="password"]{
     width: 100%;
@@ -270,8 +269,8 @@ header>ul{
     background-color: #DBC5AE;
     color: #FFFBF0;
     position: absolute;
-    right: 40%;
-    bottom: 74%;
+    right: 2%;
+    bottom: 88%;
     cursor: pointer;
 }
 .quicklogin{
@@ -294,9 +293,13 @@ header>ul{
 /* 手機板會員登入 */
 @media (max-width:768px) {
     .formclose{
-    display: none;    
+        width: 20px;
+        height: 30px;
+        right: 5%;
+        bottom: 88%;
+        cursor: pointer;
     }
-    .loginbox{
+        .loginbox{
         margin:  10% auto;
         max-width: 350px;
         width: 100%;
