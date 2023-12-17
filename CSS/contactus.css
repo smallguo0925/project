@@ -233,7 +233,17 @@ textarea{
     color: #FFF;
 }
 @media (max-width:768px) {
-    
+    #contactform{
+        max-width: 350px;
+        padding: 20px;
+    }
+    #write [type="text"]{
+        max-width: 320px;
+    }
+    textarea{
+        max-width: 320px;
+    }
+
 }
 /* 地圖 */
 .contactus-map{

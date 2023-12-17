@@ -155,3 +155,9 @@
 }
 
 
+@media (max-width:768px) {
+    .news-changebtn a{
+        width: 2em;
+        height: 2em;
+    }
+}

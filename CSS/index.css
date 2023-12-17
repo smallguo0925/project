@@ -87,17 +87,35 @@
         transform: translateX(-300%);
     }
 }
+/* 手機板跑馬燈 */
+#m-marquee{
+    display: none;
+    width: 100%;
+    max-width: 400px;
+}
 @media (max-width:768px) {
-    .marquee-content:not(:first-child){
+    .marquee-content{
         display: none;
     }
-    .marquee-content {
-        display: inline-block;
-        max-width: 400px;
+    #m-marquee{
+        display: block;
         width: 100%;
-        white-space: nowrap;
-        animation: none ;
+        max-width: 400px;
+        position: absolute;
+        top: 26%;
     }
+    .m-marquee-content{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        margin: 0 auto;
+        padding: 10px 0;
+        background-color: #ffffff99;
+        color: #723137;
+    }
+    
+
 }
 /* 熱銷商品 */
 .hotproducts img{
@@ -429,7 +447,7 @@
     .mobile-rolling{
         background: url(../Images/mobile-rolling.svg) no-repeat left top /100%;
         position: absolute;
-        top:46%;
+        top:40%;
         left: 0%;
         width: 100px;
         height: 100px;
@@ -438,7 +456,7 @@
     .mobile-yolk{
         background: url(../Images/mobile-yolk.svg) no-repeat left top /80%;
         position: absolute;
-        bottom: 23%;
+        bottom: 26%;
         left: 0%;
         width: 100px;
         height: 100px;
@@ -446,7 +464,7 @@
     .mobile-oven{
         background: url(../Images/mobile-oven.svg) no-repeat left top /80%;
         position: absolute;
-        bottom: -2%;
+        bottom: 5%;
         left: 0%;
         width: 100px;
         height: 100px;
