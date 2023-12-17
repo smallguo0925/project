@@ -308,13 +308,13 @@
 	height: 50px;
 }
 #contentButton li{
-	width: 20px;
-	height: 20px;
+	width: 15px;
+	height: 15px;
 	border-radius: 50%;
 
 	background-color: #ccc;
 	display: inline-block;
-	margin: 8px;
+	margin: 6px;
 }
 /* 被選到的那個是深色 */
 #contentButton li.clicked{
